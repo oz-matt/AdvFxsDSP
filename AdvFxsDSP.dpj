@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding='ISO-8859-1'?>
+<visualdsp-project schema="16" name="AdvFxsDSP" file="AdvFxsDSP.dpj" version="1">
+	<!-- Project build target -->
+	<target>
+		<processor revision="Automatic">ADSP-BF537</processor>
+		<extension>.dxe</extension>
+		<type></type>
+	</target>
+	<!-- Configurations -->
+	<configurations active="Debug">
+		<configuration name="Debug">
+			<intermediate-dir>.\Debug</intermediate-dir>
+			<output-dir>.\Debug</output-dir>
+			<changed-property-page-flags>0</changed-property-page-flags>
+			<tools>
+				<tool type="Compiler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Assembler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Linker">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Archiver">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Loader">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="VdkGen">
+					<option><![CDATA[]]></option>
+				</tool>
+			</tools>
+		</configuration>
+		<configuration name="Release">
+			<intermediate-dir>.\Release</intermediate-dir>
+			<output-dir>.\Release</output-dir>
+			<changed-property-page-flags>0</changed-property-page-flags>
+			<tools>
+				<tool type="Compiler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Assembler">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Linker">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Archiver">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="Loader">
+					<option><![CDATA[]]></option>
+				</tool>
+				<tool type="VdkGen">
+					<option><![CDATA[]]></option>
+				</tool>
+			</tools>
+		</configuration>
+	</configurations>
+	<!-- Project folders -->
+	<folders>
+		<folder name="Header Files" ext=".h,.hpp,.hxx">
+		</folder>
+		<folder name="Linker Files" ext=".ldf,.dlb">
+		</folder>
+		<folder name="Source Files" ext=".c,.cpp,.cxx,.asm,.dsp,.s">
+		</folder>
+	</folders>
+</visualdsp-project>
