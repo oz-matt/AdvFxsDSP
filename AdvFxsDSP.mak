@@ -46,7 +46,7 @@ Debug/AdvFxsDSP_heaptab.doj :AdvFxsDSP_heaptab.c
 	@echo ".\AdvFxsDSP_heaptab.c"
 	$(VDSP)/ccblkfn.exe -c .\AdvFxsDSP_heaptab.c -file-attr ProjectName=AdvFxsDSP -g -structs-do-not-overlap -no-multiline -double-size-32 -decls-strong -warn-protos -si-revision 0.3 -proc ADSP-BF537 -o .\Debug\AdvFxsDSP_heaptab.doj -MM
 
-Debug/main.doj :main.c $(VDSP)/Blackfin/include/cdefBF537.h $(VDSP)/Blackfin/include/cdefBF534.h $(VDSP)/Blackfin/include/defBF534.h $(VDSP)/Blackfin/include/def_LPBlackfin.h $(VDSP)/Blackfin/include/cdef_LPBlackfin.h $(VDSP)/Blackfin/include/defBF537.h 
+Debug/main.doj :main.c $(VDSP)/Blackfin/include/cdefBF537.h $(VDSP)/Blackfin/include/cdefBF534.h $(VDSP)/Blackfin/include/defBF534.h $(VDSP)/Blackfin/include/def_LPBlackfin.h $(VDSP)/Blackfin/include/cdef_LPBlackfin.h $(VDSP)/Blackfin/include/defBF537.h $(VDSP)/Blackfin/include/sys/exception.h 
 	@echo ".\main.c"
 	$(VDSP)/ccblkfn.exe -c .\main.c -file-attr ProjectName=AdvFxsDSP -g -structs-do-not-overlap -no-multiline -double-size-32 -decls-strong -warn-protos -si-revision 0.3 -proc ADSP-BF537 -o .\Debug\main.doj -MM
 

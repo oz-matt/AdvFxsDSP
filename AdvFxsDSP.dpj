@@ -14,19 +14,19 @@
 			<changed-property-page-flags>0</changed-property-page-flags>
 			<tools>
 				<tool type="Compiler">
-					<option><![CDATA[]]></option>
+					<option><![CDATA[|-Version>4.5|-O>0|-O1>0|-Ov>100|-g>1|-save-temps -path-output>0|-ED>0|-no-builtin>0|-no-extra-keywords>0|-enum-is-int>0|-no-fp-associative>0|-structs-do-not-overlap>1|-implicit-pointers>0|-eh -rtti>0|-check-init-order>0|-ignore-std>1|-const-read-write>0|-const-strings>0|-no-multiline>1|-double-size-32>1|-double-size-any>0|-decls-strong>1|-flags-compiler --diag_warning,implicit_func_decl>0|-warn-protos>1]]></option>
 				</tool>
 				<tool type="Assembler">
-					<option><![CDATA[]]></option>
+					<option><![CDATA[|-Version>4.5|-g>1]]></option>
 				</tool>
 				<tool type="Linker">
-					<option><![CDATA[|-flags-link -MDUSE_CACHE>0|-MD>USER_CRT="AdvFxsDSP_basiccrt.doj",USE_FILEIO]]></option>
+					<option><![CDATA[|-Version>4.5|-flags-link -ip>0|-MD>USER_CRT="AdvFxsDSP_basiccrt.doj",USE_FILEIO|-flags-link -e>0|NOSWITCH>1|-flags-link -MDUSE_CACHE>0]]></option>
 				</tool>
 				<tool type="Archiver">
 					<option><![CDATA[]]></option>
 				</tool>
 				<tool type="Loader">
-					<option><![CDATA[]]></option>
+					<option><![CDATA[|-Version>4.5|-b Flash>1|-f HEX>1|-Width 8>1|-waits >0|-BaudRate 500k>1|-HoldTime >0|-pFlag >0|-COMPRESSWS>9|-No2Kernel>0|-kb Flash>1|-kf HEX>1|-kWidth 8>1|UserKernel>1|split HEX>1|-maskaddr>0]]></option>
 				</tool>
 				<tool type="VdkGen">
 					<option><![CDATA[]]></option>
@@ -157,9 +157,12 @@
 				<property name="Search for libraries in the tools installation directory"><![CDATA[True]]></property>
 			</system-builder-component>
 			<system-builder-component name="Cache and Memory Protection">
-				<property name="DCBS"><![CDATA[Unset]]></property>
+				<property name="DCBS"><![CDATA[Set]]></property>
 				<property name="Data cache memory configuration"><![CDATA[RAM with no memory protection]]></property>
+				<property name="Generate support for memory protection"><![CDATA[False]]></property>
 				<property name="Instruction cache memory configuration"><![CDATA[RAM with no memory protection]]></property>
+				<property name="Write-back cache"><![CDATA[False]]></property>
+				<property name="Write-through cache"><![CDATA[False]]></property>
 			</system-builder-component>
 			<system-builder-component name="Compiler Instrumented Profiling">
 				<property name="Enable profiling"><![CDATA[False]]></property>
@@ -175,7 +178,7 @@
 				<property name="Absolute size"><![CDATA[]]></property>
 				<property name="Customize system heap"><![CDATA[False]]></property>
 				<property name="Memory types"><![CDATA[L1]]></property>
-				<property name="Minimum size"><![CDATA[2KB]]></property>
+				<property name="Minimum size"><![CDATA[2 KB]]></property>
 			</system-builder-component>
 			<system-builder-component name="Custom system stack settings">
 				<property name="Absolute size"><![CDATA[]]></property>

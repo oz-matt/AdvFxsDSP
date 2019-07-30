@@ -1,7 +1,7 @@
 /* MANAGED-BY-SYSTEM-BUILDER                                    */
 
 /*
-** ADSP-BF537 linker description file generated on Jul 28, 2019 at 18:19:43.
+** ADSP-BF537 linker description file generated on Jul 29, 2019 at 19:47:30.
 **
 ** Copyright (C) 2000-2006 Analog Devices Inc., All Rights Reserved.
 **
@@ -136,6 +136,7 @@ $OBJECTS =
 
 
 /*$VDSG<customise-async-macros>                                 */
+
 
 MEMORY
 {
