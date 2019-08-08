@@ -1,7 +1,7 @@
 /* MANAGED-BY-SYSTEM-BUILDER                                    */
 
 /*
-** AdvFxsDSP_basiccrt.s generated on Jul 29, 2019 at 19:47:31.
+** AdvFxsDSP_basiccrt.s generated on Aug 07, 2019 at 19:39:08.
 **
 ** Copyright (C) 2000-2006 Analog Devices Inc., All Rights Reserved.
 ** This contains Analog Devices Background IP and Development IP as
@@ -24,7 +24,10 @@
 **     init_regs:                    false
 **     zero_return_regs:             false
 **     use_profiling:                false
-**     set_clock_and_power:          false
+**     using_cplusplus:              true
+**     set_clock_and_power:          true
+**     platform:                     bf537_ezkit
+**     optimize_clocks_for_speed:    true
 **
 */
 
@@ -147,6 +150,64 @@ start:
   // This code is preserved if the CRT is re-generated.
 .end_of_user_code1:
 /*$VDSG<insert-code-early-startup>                              */
+
+/////////////////////////////////////////////////////////////////
+// clock-and-power-set
+#include <services/services.h>
+	// Call initialisation functions for System
+	// Services libarary clock and power management
+	R0.L = _adi_crt_ebiu_ezkit_config;
+	R0.H = _adi_crt_ebiu_ezkit_config;
+	R1 = 0; //AdjustRefreshRate=0
+	CALL.X _adi_ebiu_Init;
+	R0.L = _adi_crt_pwr_ezkit_config;
+	R0.H = _adi_crt_pwr_ezkit_config;
+	CALL.X _adi_pwr_Init;
+
+.extern _adi_ebiu_Init;
+.type _adi_ebiu_Init,STT_FUNC;
+.extern _adi_pwr_Init;
+.type _adi_pwr_Init,STT_FUNC;
+
+	.section/DOUBLEANY data1;
+	.align 4;
+_adi_crt_ebiu_ezkit_config:
+	.global _adi_crt_ebiu_ezkit_config;
+   .type _adi_crt_ebiu_ezkit_config,STT_OBJECT;
+
+/////////////////////////////////////////////////////////////////
+// bf537-ezkit
+   .byte4 = ADI_EBIU_CMD_SET_EZKIT, ADI_EBIU_EZKIT_BF537,
+
+/////////////////////////////////////////////////////////////////
+// clock-and-power-set
+	 ADI_EBIU_CMD_END, 0 /*padding*/; 
+._adi_crt_ebiu_ezkit_config.end:
+
+_adi_crt_pwr_ezkit_config:
+	.global _adi_crt_pwr_ezkit_config;
+	.type _adi_crt_pwr_ezkit_config,STT_OBJECT;
+
+/////////////////////////////////////////////////////////////////
+// bf537-ezkit
+	.byte4 = ADI_PWR_CMD_SET_EZKIT, ADI_PWR_EZKIT_BF537_600MHZ;
+
+/////////////////////////////////////////////////////////////////
+// clock-and-power-set
+	.byte4 = ADI_PWR_CMD_END, 0 /*padding*/;
+._adi_crt_pwr_ezkit_config.end:
+	.section/DOUBLEANY program;
+	.align 2;
+
+/////////////////////////////////////////////////////////////////
+// optimize-clocks-for-speed
+	// Optimize clock frequency for processor speed
+	R0 = 0;
+	R1 = R0;
+	R2 = ADI_PWR_DF_NONE;
+	CALL.X _adi_pwr_SetFreq;
+.extern _adi_pwr_SetFreq;
+.type _adi_pwr_SetFreq,STT_FUNC;
 
 /////////////////////////////////////////////////////////////////
 // standard

@@ -1,7 +1,7 @@
 /* MANAGED-BY-SYSTEM-BUILDER                                    */
 
 /*
-** User heap source file generated on Jul 29, 2019 at 19:47:30.
+** User heap source file generated on Aug 07, 2019 at 19:39:08.
 **
 ** Copyright (C) 2000-2006 Analog Devices Inc., All Rights Reserved.
 **
@@ -13,8 +13,9 @@
 **     crt_doj:                                .\Debug\AdvFxsDSP_basiccrt.doj
 **     processor:                              ADSP-BF537
 **     si_revision:                            automatic
+**     using_cplusplus:                        true
 **     mem_init:                               false
-**     use_vdk:                                false
+**     use_vdk:                                true
 **     use_eh:                                 true
 **     use_argv:                               false
 **     running_from_internal_memory:           true
@@ -24,10 +25,12 @@
 **     libraries_use_ieeefp_emulation_libs:    false
 **     libraries_use_eh_enabled_libs:          false
 **     system_heap:                            L1
-**     system_heap_min_size:                   2K
-**     system_stack:                           L1
-**     system_stack_min_size:                  2K
-**     use_sdram:                              false
+**     system_heap_min_size:                   11K
+**     system_stack:                           SCRATCHPAD
+**     system_stack_min_size:                  1K
+**     use_sdram:                              true
+**     use_sdram_size:                         64M
+**     use_sdram_partitioned:                  default
 **
 */
 
