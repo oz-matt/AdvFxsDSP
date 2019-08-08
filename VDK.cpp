@@ -172,7 +172,7 @@ HeapID g_IOObjectHeap = ksystem_heap;
 #endif // VDK_INCLUDE_MEMORYPOOLS_
 
 
-	float g_TickPeriod = 0.1;
+	float g_TickPeriod = .1;
 
 	unsigned int g_ClockFrequency = 270.000;
 

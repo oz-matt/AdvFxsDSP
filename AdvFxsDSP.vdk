@@ -3,7 +3,7 @@ VdkFileVersion=4.5
 [System Data]
 System.Name=System
 System.Clock Frequency (MHz)=270
-System.Tick Period (ms)=0.1
+System.Tick Period (ms)=.1
 System.History Buffer Size=256
 System.Maximum Running Threads=10
 System.Instrumentation Level=Full Instrumentation

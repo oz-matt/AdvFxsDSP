@@ -18,7 +18,7 @@ EX_INTERRUPT_HANDLER(Timer0_ISR)
 	*pTIMER_STATUS = 0x0001;
 
 	*pPORTFIO_TOGGLE	= 0x0040;
-	*pUART1_THR			= 0x32; // Transmit 
+	*pUART0_THR			= 0x32; // Transmit 
 	
 }
 
@@ -26,8 +26,8 @@ void
 main_RunFunction(void **inPtr)
 {
     /* Put the thread's "main" Initialization HERE */
-*pPORTF_FER 		= 0x000C;  // Enable peripheral functions for PF2 and 3
-	*pPORTFIO_DIR		= 0x0044;  // Set Port F Pin 6 (LED1) and Pin 3 (UART1TX) as an output
+	*pPORTF_FER 		= 0x0003;  // Enable peripheral functions for PF2 and 3
+	*pPORTFIO_DIR		= 0x0041;  // Set Port F Pin 6 (LED1) and Pin 3 (UART0TX) as an output
 	*pPORT_MUX			= 0x0000;
 	
 	*pTIMER0_CONFIG		= 0x0019;
@@ -42,11 +42,11 @@ main_RunFunction(void **inPtr)
 	
 	// UART setup
 	
-	*pUART1_GCTL		= 0x01; // Enable UART1 clk
-	*pUART1_LCR			= 0x83; // Enable access to the baud divisor, 8-bit word mode
-	*pUART1_DLL			= 0xA3;
-	*pUART1_DLH 		= 0x00; // Set baud to 9600
-	*pUART1_LCR			= 0x03; // Disable access to the baud divisor, 8-bit word mode
+	*pUART0_GCTL		= 0x01; // Enable UART1 clk
+	*pUART0_LCR			= 0x83; // Enable access to the baud divisor, 8-bit word mode
+	*pUART0_DLL			= 0x40; // Set baud to 115200 (SCLK = 118MHz)
+	*pUART0_DLH 		= 0x00;
+	*pUART0_LCR			= 0x03; // Disable access to the baud divisor, 8-bit word mode
 	
 	// assign ISRs to interrupt vectors
 	register_handler(ik_ivg11, Timer0_ISR);		// Timer0 ISR -> IVG 11

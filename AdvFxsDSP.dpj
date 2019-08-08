@@ -14,19 +14,19 @@
 			<changed-property-page-flags>0</changed-property-page-flags>
 			<tools>
 				<tool type="Compiler">
-					<option><![CDATA[|AdditionalOptions>-threads]]></option>
+					<option><![CDATA[|-Version>4.5|-O>0|-O1>0|-Ov>100|-g>1|-save-temps -path-output>0|-ED>0|-no-builtin>0|-no-extra-keywords>0|-enum-is-int>0|-no-fp-associative>0|-structs-do-not-overlap>0|-implicit-pointers>0|-eh -rtti>0|-check-init-order>0|-ignore-std>0|-const-read-write>0|-const-strings>0|-no-multiline>1|-double-size-32>1|-double-size-any>0|-decls-strong>1|-flags-compiler --diag_warning,implicit_func_decl>0|-warn-protos>1|AdditionalOptions>-threads]]></option>
 				</tool>
 				<tool type="Assembler">
-					<option><![CDATA[|AdditionalOptions>-D_ADI_THREADS]]></option>
+					<option><![CDATA[|-Version>4.5|-g>1|AdditionalOptions>-D_ADI_THREADS]]></option>
 				</tool>
 				<tool type="Linker">
-					<option><![CDATA[|AdditionalOptions>-MD_ADI_THREADS|-flags-link -MDUSE_CACHE>0|-MD>USER_CRT="AdvFxsDSP_basiccrt.doj",USE_FILEIO,__cplusplus]]></option>
+					<option><![CDATA[|-Version>4.5|-flags-link -ip>0|-MD>USER_CRT="AdvFxsDSP_basiccrt.doj",USE_FILEIO,__cplusplus|-flags-link -e>0|NOSWITCH>1|AdditionalOptions>-MD_ADI_THREADS|-flags-link -MDUSE_CACHE>0]]></option>
 				</tool>
 				<tool type="Archiver">
 					<option><![CDATA[]]></option>
 				</tool>
 				<tool type="Loader">
-					<option><![CDATA[]]></option>
+					<option><![CDATA[|-Version>4.5|-b Flash>1|-f HEX>1|-Width 8>1|-waits >0|-BaudRate 500k>1|-HoldTime >0|-pFlag >0|-COMPRESSWS>9|-No2Kernel>0|-kb Flash>1|-kf HEX>1|-kWidth 8>1|UserKernel>1|split HEX>1|-maskaddr>0]]></option>
 				</tool>
 				<tool type="VdkGen">
 					<option><![CDATA[]]></option>
@@ -258,7 +258,7 @@
 			</system-builder-component>
 			<system-builder-component name="Processor clock and power settings">
 				<property name="Clock and power settings"><![CDATA[Optimize for speed]]></property>
-				<property name="Configure clock and power settings"><![CDATA[True]]></property>
+				<property name="Configure clock and power settings"><![CDATA[False]]></property>
 				<property name="EZ-KIT"><![CDATA[ADSP-BF537 EZ-KIT]]></property>
 			</system-builder-component>
 			<system-builder-component name="Program Running From">
