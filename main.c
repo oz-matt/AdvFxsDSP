@@ -9,8 +9,11 @@
 
 /* Get access to any of the VDK features & datatypes used */
 #include "main.h"
+#include "lib\uart.h"
 #include <cdefBF537.h>
 #include <sys\exception.h>
+
+int flag = 0;
 
 EX_INTERRUPT_HANDLER(Timer0_ISR)
 {
@@ -18,8 +21,10 @@ EX_INTERRUPT_HANDLER(Timer0_ISR)
 	*pTIMER_STATUS = 0x0001;
 
 	*pPORTFIO_TOGGLE	= 0x0040;
-	*pUART0_THR			= 0x32; // Transmit 
-	
+	uart_send_str("Hello World!\r\n", 15);
+	//uart_send_char('y');
+	//*pUART0_THR			= 0x79;
+	//flag = 1;
 }
 
 void
@@ -44,7 +49,7 @@ main_RunFunction(void **inPtr)
 	
 	*pUART0_GCTL		= 0x01; // Enable UART1 clk
 	*pUART0_LCR			= 0x83; // Enable access to the baud divisor, 8-bit word mode
-	*pUART0_DLL			= 0x40; // Set baud to 115200 (SCLK = 118MHz)
+	*pUART0_DLL			= 0x1B; // Set baud to 115200 (SCLK = 50MHz)
 	*pUART0_DLH 		= 0x00;
 	*pUART0_LCR			= 0x03; // Disable access to the baud divisor, 8-bit word mode
 	
@@ -56,6 +61,12 @@ main_RunFunction(void **inPtr)
 	
     while (1)
     {
+        /*if (flag)
+        {
+            flag = 0;
+            uart_send_str("Hi", 2);
+        }*/
+        
         /* Put the thread's "main" body HERE */
 
         /* Use a "break" instruction to exit the "while (1)" loop */
