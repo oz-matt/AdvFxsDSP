@@ -1,0 +1,1346 @@
+Translating SystemVue system design...
+Adding top level...
+	Added top level: Design1_1
+Adding subcircuit Type...
+	Added subcircuit Type:
+		Type: Design1_1
+Adding top level port...
+	Added top level port:
+		Name: dp1
+		Output: 0
+		Width: 32
+		Signed: 1
+		Rate: 96000
+Adding top level port...
+	Added top level port:
+		Name: dp2
+		Output: 1
+		Width: 32
+		Signed: 1
+		Rate: 96000
+Adding Type // Instance...
+	Added Type:
+		Type: FIR_Fxp
+	Added Instance:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Name: F1
+Adding port...
+	Added port:
+		Type: FIR_Fxp
+		Port name: dataIn
+		Output: 0
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataInWL
+		Param Type: Unsigned
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataInIWL
+		Param Type: Integer
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataInSGN
+		Param Type: Unsigned
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataInWL
+		Param Value: 32
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataInIWL
+		Param Value: 2
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataInSGN
+		Param Value: 1
+Adding port params...
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataInWL
+		Param Type: Unsigned
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataInIWL
+		Param Type: Integer
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataInSGN
+		Param Type: Unsigned
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataInWL
+		Param Value: 32
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataInIWL
+		Param Value: 2
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataInSGN
+		Param Value: 1
+Adding port...
+	Added port:
+		Type: FIR_Fxp
+		Port name: dataOut
+		Output: 1
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataOutWL
+		Param Type: Unsigned
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataOutIWL
+		Param Type: Integer
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataOutSGN
+		Param Type: Unsigned
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataOutWL
+		Param Value: 32
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataOutIWL
+		Param Value: 4
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataOutSGN
+		Param Value: 1
+Adding port params...
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataOutWL
+		Param Type: Unsigned
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataOutIWL
+		Param Type: Integer
+	Added port parameter:
+		Type: FIR_Fxp
+		Param name: dataOutSGN
+		Param Type: Unsigned
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataOutWL
+		Param Value: 32
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataOutIWL
+		Param Value: 4
+	Set port parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: dataOutSGN
+		Param Value: 1
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: TypeOverride
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: TypeOverride
+		Param Value: 0
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: CycleAccurate
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: CycleAccurate
+		Param Value: 1
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: DecimationFactor
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: DecimationFactor
+		Param Value: 1
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: InterpolationFactor
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: InterpolationFactor
+		Param Value: 1
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: OutputWordlength
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: OutputWordlength
+		Param Value: 32
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: OutputIntegerWordlength
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: OutputIntegerWordlength
+		Param Value: 4
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: OutputIsSigned
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: OutputIsSigned
+		Param Value: 1
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: OutputQuantization
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: OutputQuantization
+		Param Value: 5
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: OutputOverflow
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: OutputOverflow
+		Param Value: 3
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: OutputSaturationBits
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: OutputSaturationBits
+		Param Value: 0
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: WeightsWordlength
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: WeightsWordlength
+		Param Value: 16
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: WeightsIntegerWordlength
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: WeightsIntegerWordlength
+		Param Value: 2
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: WeightsIsSigned
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: WeightsIsSigned
+		Param Value: 1
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: WeightsQuantization
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: WeightsQuantization
+		Param Value: 5
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: WeightsOverflow
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: WeightsOverflow
+		Param Value: 3
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: WeightsSaturationBits
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: WeightsSaturationBits
+		Param Value: 0
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: AccumulatorWordlength
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: AccumulatorWordlength
+		Param Value: 47
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: AccumulatorIntegerWordlength
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: AccumulatorIntegerWordlength
+		Param Value: 3
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: AccumulatorIsSigned
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: AccumulatorIsSigned
+		Param Value: 1
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: AccumulatorQuantization
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: AccumulatorQuantization
+		Param Value: 5
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: AccumulatorOverflow
+		Param Type: Unsigned
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: AccumulatorOverflow
+		Param Value: 3
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: AccumulatorSaturationBits
+		Param Type: Integer
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: AccumulatorSaturationBits
+		Param Value: 0
+Adding parameter...
+	Parameter not added, unsupported type: Name:CoefficientsParam Type: FLOATARRAY
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: Coefficients
+		Param Value: -3.4772918664410799e-003 -2.99506543542492e-003 9.1290383334150199e-004 6.0986920590246699e-003 6.1998759171241601e-003 -1.1072264018483001e-003 -8.8208895210871406e-003 -6.4831587575573304e-003 6.5531622200652104e-003 1.63363282550666e-002 8.0799425389591496e-003 -1.3787336078067701e-002 -2.4543172475211501e-002 -5.2468151731607203e-003 2.9480025295566599e-002 3.81319433738668e-002 -3.2352797525580499e-003 -6.1909653320639198e-002 -6.3815108289063796e-002 3.8840585790736799e-002 2.0933804267481801e-001 3.40995442655527e-001 3.40995442655527e-001 2.0933804267481801e-001 3.8840585790736799e-002 -6.3815108289063796e-002 -6.1909653320639198e-002 -3.2352797525580499e-003 3.81319433738668e-002 2.9480025295566599e-002 -5.2468151731607203e-003 -2.4543172475211501e-002 -1.3787336078067701e-002 8.0799425389591496e-003 1.63363282550666e-002 6.5531622200652104e-003 -6.4831587575573304e-003 -8.8208895210871406e-003 -1.1072264018483001e-003 6.1998759171241601e-003 6.0986920590246699e-003 9.1290383334150199e-004 -2.99506543542492e-003 -3.4772918664410799e-003
+Adding parameter...
+	Added parameter:
+		Type: FIR_Fxp
+		Param name: FxpCoeff
+		Param Type: String
+	Set parameter value:
+		Location: Design1_1
+		Type: FIR_Fxp
+		Instance name: F1
+		Param name: FxpCoeff
+		Param Value: -57 -50 14 99 101 -19 -145 -107 107 267 132 -226 -403 -86 483 624 -54 -1015 -1046 636 3429 5586 5586 3429 636 -1046 -1015 -54 624 483 -86 -403 -226 132 267 107 -107 -145 -19 101 99 14 -50 -57
+Adding signal..
+	Added signal: 
+		Location: Design1_1
+		Source: F1
+			Port: dataOut
+		Destination: Design1_1
+			Port: dp2
+		Signal name: F1dataOutdp2
+      Cycles per sample: 1
+Adding signal..
+	Added signal: 
+		Location: Design1_1
+		Source: Design1_1
+			Port: dp1
+		Destination: F1
+			Port: dataIn
+		Signal name: dp1F1dataIn
+      Cycles per sample: 1
+Translating SystemVue system design complete.
+System built - running code generation...
+Parsing HDF Files. Number of files: 1
+Parsing HDF File: D:\Keysight\SystemVue2015.01\Library\source\primitives.xml
+******Starting to parse HDF file: D:\Keysight\SystemVue2015.01\Library\source\primitives.xml ******
+Creating component 'ResetProcess'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'ClockGenerator'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'FileInputProcess'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'FileOutputProcess'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'EnableGenerator'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'ABS_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'AddFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'BitConst1_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'BitConst0_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'ConstFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'NegateFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'MpyFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'DelayFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'DelayEnFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "Command"
+Creating component 'RegisterFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "Command"
+Creating component 'PulseTrain'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'SerToParFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'ParToSerFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'CompareConstFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'CompareFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'LookUpTableFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'MapperFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'TriggeredWaveFormFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'FxpToFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'ExtractFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'XOR_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'SubFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'GainFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'MuxFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'FIR_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'FIR_EnFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'DownSampleFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'UpSampleFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'CounterFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'AccumulatorFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'SPRamFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'DPRamFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'AND_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'OR_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'NOR_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'XNOR_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'NAND_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'NOT_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'BitMergeFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'LatchFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'AddCarryFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'SqrtFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'ShiftFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'DivFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'Commutator'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'Distributor'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+Creating component 'FFT_Fxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'CORDIC_VectoringFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+Creating component 'CORDIC_RotationFxp'
+WARNING: unknown tag "GenerateVerilog"
+WARNING: unknown tag "Command"
+WARNING: unknown tag "IncludeVerilog"
+WARNING: unknown tag "Include"
+HDF file D:\Keysight\SystemVue2015.01\Library\source\primitives.xml successfully parsed...
+analysing wildcarding for component Design1_1...
+   component does not require wildcard processing.
+analysing wildcarding for component FIR_Fxp...
+   component does not require wildcard processing.
+WARNING: component 'FIR_Fxp' Parameter 'DecimationFactor has type 'Unsigned'
+in the primitives and type 'Integer' in the system.
+Overriding with primitive type.
+WARNING: component 'FIR_Fxp' Parameter 'InterpolationFactor has type 'Unsigned'
+in the primitives and type 'Integer' in the system.
+Overriding with primitive type.
+WARNING: component 'FIR_Fxp' Parameter 'dataInWL has type 'Integer'
+in the primitives and type 'Unsigned' in the system.
+Overriding with primitive type.
+
+consolidating component 'Design1_1' ...
+   consolidating output signals of all sub-modules ...
+      F1 (FIR_Fxp)
+         adding new router 'F1_dataOut'
+   done.
+   propagating signal attributes to ports ...
+      adding property CyclesPerSample=1 to port dp1
+      adding property CyclesPerSample=1 to port dp2
+   done.
+done.
+consolidating component 'FIR_Fxp' ... component is atomic, no consolidation required.
+
+augmenting component 'FIR_Fxp' ...
+processing clock enables
+
+processing clocks and resets
+augmenting component 'Design1_1' ...
+processing clock enables
+
+processing clocks and resets
+
+analysing module F1 (FIR_Fxp)
+   CLK is a clock, connecting it to the system clock
+   RST is a reset, connecting it to the system reset
+
+
+analysing module Design1_1_CE_inst (Design1_1_CE)
+   clk is a clock, connecting it to the system clock
+   rst is a reset, connecting it to the system reset
+analysing module Design1_1_inst (Design1_1)
+   clk is a clock, connecting it to the system clock
+   rst is a reset, connecting it to the system resetTestbenchGenerator::addIOProcesses...
+direction of port: input
+input filename is: dp1.txt
+direction of port: output
+output filename is: dp2.txt
+Uniquifing modules...
+component ClockGenerator is a primitive component.
+component Design1_1 has modules:
+    FIR_Fxp module has UniqueComponentName=FIR_Fxp1
+end of modules for component Design1_1.
+component Design1_1_CE has modules:
+    EnableGenerator module has UniqueComponentName=EnableGenerator
+end of modules for component Design1_1_CE.
+component Design1_1_CoSimWrapper has modules:
+    Design1_1_CE module has UniqueComponentName=Design1_1_CE
+    Design1_1 module has UniqueComponentName=Design1_1
+end of modules for component Design1_1_CoSimWrapper.
+component Design1_1_SimTB has modules:
+    ClockGenerator module has UniqueComponentName=ClockGenerator1
+    Design1_1_CE module has UniqueComponentName=Design1_1_CE
+    Design1_1 module has UniqueComponentName=Design1_1
+    EnableGenerator module has UniqueComponentName=EnableGenerator
+    FileInputProcess module has UniqueComponentName=FileInputProcess
+    FileOutputProcess module has UniqueComponentName=FileOutputProcess
+    ResetProcess module has UniqueComponentName=ResetProcess1
+end of modules for component Design1_1_SimTB.
+component EnableGenerator is a primitive component.
+component FIR_Fxp is a primitive component.
+component FileInputProcess is a primitive component.
+component FileOutputProcess is a primitive component.
+component ResetProcess is a primitive component.
+Uniquifing modules finished.
+Template path is: D:/Keysight/SystemVue2015.01/\Library\Templates\
+Working path is: D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\
+HDL source path is: D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_source\
+HDL testbench path is: D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_testbench\
+When executing command "cmd /c mkdir "D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_source\"": GetExitCodeProcess API returned 1 and provided process termination status of: 0
+When executing command "cmd /c mkdir "D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_source\"": last error status was: 0
+    with interpretation: The operation completed successfully.
+
+    note that this last error may not correspond to any failure seen from the GetExitCodeProcess API above.
+Returning process termination status 0 as the result of the original command.
+When executing command "cmd /c mkdir "D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_testbench\"": GetExitCodeProcess API returned 1 and provided process termination status of: 0
+When executing command "cmd /c mkdir "D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_testbench\"": last error status was: 0
+    with interpretation: The operation completed successfully.
+
+    note that this last error may not correspond to any failure seen from the GetExitCodeProcess API above.
+Returning process termination status 0 as the result of the original command.
+   Removing old generated code...
+When executing command "cmd /C del /F /Q "D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_source\*.vhd"": GetExitCodeProcess API returned 1 and provided process termination status of: 0
+When executing command "cmd /C del /F /Q "D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_source\*.vhd"": last error status was: 0
+    with interpretation: The operation completed successfully.
+
+    note that this last error may not correspond to any failure seen from the GetExitCodeProcess API above.
+Returning process termination status 0 as the result of the original command.
+When executing command "cmd /C del /F /Q "D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_testbench\*.vhd"": GetExitCodeProcess API returned 1 and provided process termination status of: 0
+When executing command "cmd /C del /F /Q "D:\dspws\AdvFxsDSP\SystemVueSim\Design1_1_HDL\VHDL_testbench\*.vhd"": last error status was: 0
+    with interpretation: The operation completed successfully.
+
+    note that this last error may not correspond to any failure seen from the GetExitCodeProcess API above.
+Returning process termination status 0 as the result of the original command.
+   Removing old generated code finished.
+   Merging include information...
+Merging includes...
+Performing first pass of merging...
+component ClockGenerator is primitive, does not need merging.
+component Design1_1 has modules:
+    FIR_Fxp
+        merging the include: p_fxp
+end of modules for component Design1_1.
+component Design1_1_CE has modules:
+    EnableGenerator
+        merging the include: p_fxp
+end of modules for component Design1_1_CE.
+component Design1_1_CoSimWrapper has modules:
+    Design1_1_CE
+        merging the include: p_fxp
+    Design1_1
+        merging the include: p_fxp
+end of modules for component Design1_1_CoSimWrapper.
+component Design1_1_SimTB has modules:
+    ClockGenerator
+        merging the include: p_testbench
+    Design1_1_CE
+        merging the include: p_fxp
+    Design1_1
+        merging the include: p_fxp
+    EnableGenerator
+        merging the include: p_fxp
+    FileInputProcess
+        merging the include: p_fxp
+    FileOutputProcess
+        merging the include: textio
+    ResetProcess
+        no includes discovered. 
+end of modules for component Design1_1_SimTB.
+component EnableGenerator is primitive, does not need merging.
+component FIR_Fxp is primitive, does not need merging.
+component FileInputProcess is primitive, does not need merging.
+component FileOutputProcess is primitive, does not need merging.
+component ResetProcess is primitive, does not need merging.
+Merged result changed from last pass, remerging.
+Performing merging pass 1...
+component ClockGenerator is primitive, does not need merging.
+component Design1_1 has modules:
+    FIR_Fxp
+        merging the include: p_fxp
+end of modules for component Design1_1.
+component Design1_1_CE has modules:
+    EnableGenerator
+        merging the include: p_fxp
+end of modules for component Design1_1_CE.
+component Design1_1_CoSimWrapper has modules:
+    Design1_1_CE
+        merging the include: p_fxp
+    Design1_1
+        merging the include: p_fxp
+end of modules for component Design1_1_CoSimWrapper.
+component Design1_1_SimTB has modules:
+    ClockGenerator
+        merging the include: p_testbench
+    Design1_1_CE
+        merging the include: p_fxp
+    Design1_1
+        merging the include: p_fxp
+    EnableGenerator
+        merging the include: p_fxp
+    FileInputProcess
+        merging the include: p_fxp
+    FileOutputProcess
+        merging the include: textio
+    ResetProcess
+        no includes discovered. 
+end of modules for component Design1_1_SimTB.
+component EnableGenerator is primitive, does not need merging.
+component FIR_Fxp is primitive, does not need merging.
+component FileInputProcess is primitive, does not need merging.
+component FileOutputProcess is primitive, does not need merging.
+component ResetProcess is primitive, does not need merging.
+Merging includes finished.
+   Merging include information finished.
+   Performing global code generation commands...
+generating global code for component Design1_1_SimTB
+   generating code for: p_fxp
+      copy "%%SourceDir/p_fxp.vhd" "%%HDLDir/p_fxp.vhd"
+ Replacing %%SourceDir: copy "%%SourceDir/p_fxp.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/p_fxp.vhd"
+  %%SourceDir replaced: copy "D:\Keysight\SystemVue2015.01\Library\source/p_fxp.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/p_fxp.vhd"
+      copy "D:\Keysight\SystemVue2015.01\Library\source/p_fxp.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/p_fxp.vhd"
+ Parsing command
+   generating code for: p_testbench
+      copy "%%SourceDir/p_testbench.vhd" "%%HDLTBDir/p_testbench.vhd"
+ Replacing %%SourceDir: copy "%%SourceDir/p_testbench.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/p_testbench.vhd"
+  %%SourceDir replaced: copy "D:\Keysight\SystemVue2015.01\Library\source/p_testbench.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/p_testbench.vhd"
+      copy "D:\Keysight\SystemVue2015.01\Library\source/p_testbench.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/p_testbench.vhd"
+ Parsing command
+   generating code for: textio
+      no commands found.
+   Performing global code generation commands finished.
+   Performing component code generation commands...
+generating components...
+testing ClockGenerator for uniqueness
+ClockGenerator is primitive but unique, so skipped here. 
+component Design1_1 has modules:
+    FIR_Fxp - is unique so skipped here.
+end of modules for component Design1_1.
+component Design1_1_CE has modules:
+    EnableGenerator - is non-unique so dealt with as a primitive.
+end of modules for component Design1_1_CE.
+component Design1_1_CoSimWrapper has modules:
+    Design1_1_CE - is non-unique so dealt with as a primitive.
+    Design1_1 - is non-unique so dealt with as a primitive.
+end of modules for component Design1_1_CoSimWrapper.
+component Design1_1_SimTB has modules:
+    ClockGenerator - is inline, so skipped here.
+    Design1_1_CE - is non-unique so dealt with as a primitive.
+    Design1_1 - is non-unique so dealt with as a primitive.
+    EnableGenerator - is non-unique so dealt with as a primitive.
+    FileInputProcess - is non-unique so dealt with as a primitive.
+    FileOutputProcess - is non-unique so dealt with as a primitive.
+    ResetProcess - is inline, so skipped here.
+end of modules for component Design1_1_SimTB.
+testing EnableGenerator for uniqueness
+component EnableGenerator commands:
+	copy "%%SourceDir/EnableGenerator.vhd" "%%HDLTBDir/EnableGenerator.vhd"
+ Replacing %%SourceDir: copy "%%SourceDir/EnableGenerator.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/EnableGenerator.vhd"
+  %%SourceDir replaced: copy "D:\Keysight\SystemVue2015.01\Library\source/EnableGenerator.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/EnableGenerator.vhd"
+	copy "D:\Keysight\SystemVue2015.01\Library\source/EnableGenerator.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/EnableGenerator.vhd"
+testing FIR_Fxp for uniqueness
+FIR_Fxp is primitive but unique, so skipped here. 
+testing FileInputProcess for uniqueness
+component FileInputProcess commands:
+	copy "%%SourceDir/FileInputProcess.vhd" "%%HDLTBDir/FileInputProcess.vhd"
+ Replacing %%SourceDir: copy "%%SourceDir/FileInputProcess.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileInputProcess.vhd"
+  %%SourceDir replaced: copy "D:\Keysight\SystemVue2015.01\Library\source/FileInputProcess.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileInputProcess.vhd"
+	copy "D:\Keysight\SystemVue2015.01\Library\source/FileInputProcess.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileInputProcess.vhd"
+testing FileOutputProcess for uniqueness
+component FileOutputProcess commands:
+	copy "%%SourceDir/FileOutputProcess.vhd" "%%HDLTBDir/FileOutputProcess.vhd"
+ Replacing %%SourceDir: copy "%%SourceDir/FileOutputProcess.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileOutputProcess.vhd"
+  %%SourceDir replaced: copy "D:\Keysight\SystemVue2015.01\Library\source/FileOutputProcess.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileOutputProcess.vhd"
+	copy "D:\Keysight\SystemVue2015.01\Library\source/FileOutputProcess.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileOutputProcess.vhd"
+testing ResetProcess for uniqueness
+ResetProcess is primitive but unique, so skipped here. 
+component code generation finished.
+finalised command list is: 
+copy "D:\Keysight\SystemVue2015.01\Library\source/EnableGenerator.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/EnableGenerator.vhd"
+ Parsing command
+copy "D:\Keysight\SystemVue2015.01\Library\source/FileInputProcess.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileInputProcess.vhd"
+ Parsing command
+copy "D:\Keysight\SystemVue2015.01\Library\source/FileOutputProcess.vhd" "D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileOutputProcess.vhd"
+ Parsing command
+   Performing component code generation commands finished.
+   Generating subgraph HDL...
+generating sub graph code...
+Code generation not required on component ClockGenerator.
+Code generation required on component Design1_1.
+   Adding additional includes for component Design1_1
+   Found additional include(s):
+      include: p_fxp
+	component p_fxp commands:
+	%%Inline(library work;)
+	%%Inline(use work.p_fxp.all;)
+   declaring entity.
+   opening architecture.
+   declaring component FIR_Fxp1
+   declaring signal F1_dataOut
+   instantiating component FIR_Fxp1
+      inspecting inputs for port dataIn
+         found signaldp1F1dataIn with no index attribute
+      inspecting inputs for port CLK
+         found signals1 with no index attribute
+      inspecting inputs for port RST
+         found signals2 with no index attribute
+      inspecting inputs for port CE
+         found signals3 with no index attribute
+      inspecting inputs for port dataOut
+         found signalF1_dataOut with no index attribute
+      indexing connections for port CE
+         0: 
+      indexing connections for port CLK
+         0: 
+      indexing connections for port RST
+         0: 
+      indexing connections for port dataIn
+         0: 
+      indexing connections for port dataOut
+         0: 
+      component is unique, code generation required.
+    Adding syntax %%G[AccumulatorIntegerWordlength]=3
+    Adding syntax %%G[AccumulatorIsSigned]=1
+    Adding syntax %%G[AccumulatorWordlength]=47
+    Adding syntax %%G[DecimationFactor]=1
+    Adding syntax %%G[FxpCoeff]=-57 -50 14 99 101 -19 -145 -107 107 267 132 -226 -403 -86 483 624 -54 -1015 -1046 636 3429 5586 5586 3429 636 -1046 -1015 -54 624 483 -86 -403 -226 132 267 107 -107 -145 -19 101 99 14 -50 -57
+    Adding syntax %%G[InterpolationFactor]=1
+    Adding syntax %%G[OutputOverflow]=3
+    Adding syntax %%G[OutputQuantization]=5
+    Adding syntax %%G[OutputSaturationBits]=0
+    Adding syntax %%G[dataInIWL]=2
+    Adding syntax %%G[dataInSGN]=1
+    Adding syntax %%G[dataInWL]=32
+    Adding syntax %%G[dataOutIWL]=4
+    Adding syntax %%G[dataOutSGN]=1
+    Adding syntax %%G[dataOutWL]=32
+	component FIR_Fxp commands:
+	%%SP(%%TemplateDir/GenericFilter.vho,%%HDLDir/%%BlockTypeName.vhd)
+	"%%UtilitiesDir\FilterGen.dll" "VHDL" "%%BlockTypeName_GNRC" "%%UtilitiesDir/GenericFiltGen//"
+DLL type command
+ Parsing DLL command
+  DLL path: D:\Keysight\SystemVue2015.01\\Library\Utilities\FilterGen.dll
+  Number of args: 3
+   DLL arg[0]: VHDL
+   DLL arg[1]: FIR_Fxp1_GNRC
+   DLL arg[2]: D:\Keysight\SystemVue2015.01\\Library\Utilities\GenericFiltGen\\
+ Parsing DLL parameters
+ Parsing DLL parameters complete
+ Loading DLL: D:\Keysight\SystemVue2015.01\\Library\Utilities\FilterGen.dll
+  DLL loaded: D:\Keysight\SystemVue2015.01\\Library\Utilities\FilterGen.dll
+ Setting DLL arguments
+  DLL arguments set
+ Setting DLL parameters
+  DLL parameters set
+ Executing DLL code gen
+  DLL code gen executed
+ Getting DLL redundant parameters
+	Adding redundant param: FxpCoeff, value: 
+ Getting DLL redundant parameters complete
+ Unloading DLL: D:\Keysight\SystemVue2015.01\\Library\Utilities\FilterGen.dll
+    Redundant parameters for instance: F1
+      Updating redundant parameter: FxpCoeff, new value: 
+    Redundant parameters for instance: F1 updated.
+      component is not inline, using component instantiation.
+      port ce1 has connected signals:
+      port is an input
+      output signals: 1
+         signal: s3
+         connected to: F1
+         which is a module.
+      port clk has connected signals:
+      port is an input
+      output signals: 1
+         signal: s1
+         connected to: F1
+         which is a module.
+      port dp1 has connected signals:
+      port is an input
+      output signals: 1
+         signal: dp1F1dataIn
+         connected to: F1
+         which is a module.
+      port dp2 has connected signals:
+       port is an output
+      input signals: 1
+         signal: F1dataOutdp2
+         connected to: F1_dataOut
+         which is a router, so requires a signal assignment.
+      port rst has connected signals:
+      port is an input
+      output signals: 1
+         signal: s2
+         connected to: F1
+         which is a module.
+Code generation required on component Design1_1_CE.
+   Adding additional includes for component Design1_1_CE
+   Found additional include(s):
+      include: p_fxp
+	component p_fxp commands:
+	%%Inline(library work;)
+	%%Inline(use work.p_fxp.all;)
+   declaring entity.
+   opening architecture.
+   declaring component EnableGenerator
+   instantiating component EnableGenerator
+      inspecting inputs for port clk
+         found signals1 with no index attribute
+      inspecting inputs for port rst
+         found signals2 with no index attribute
+      inspecting inputs for port en
+         found signals3 with no index attribute
+      inspecting inputs for port ce
+         found signals4 with no index attribute
+      indexing connections for port ce
+         0: 
+      indexing connections for port clk
+         0: 
+      indexing connections for port en
+         0: 
+      indexing connections for port rst
+         0: 
+      component is not inline, using component instantiation.
+      component is non-unique, code generation was done previously.
+      port ce1 has connected signals:
+       port is an output
+      input signals: 1
+         signal: s4
+         connected to: EnableGenerator1
+         which is a module.
+      port clk has connected signals:
+      port is an input
+      output signals: 1
+         signal: s1
+         connected to: EnableGenerator1
+         which is a module.
+      port en has connected signals:
+      port is an input
+      output signals: 1
+         signal: s3
+         connected to: EnableGenerator1
+         which is a module.
+      port rst has connected signals:
+      port is an input
+      output signals: 1
+         signal: s2
+         connected to: EnableGenerator1
+         which is a module.
+Code generation required on component Design1_1_CoSimWrapper.
+   Adding additional includes for component Design1_1_CoSimWrapper
+   Found additional include(s):
+      include: p_fxp
+	component p_fxp commands:
+	%%Inline(library work;)
+	%%Inline(use work.p_fxp.all;)
+   declaring entity.
+   opening architecture.
+   declaring component Design1_1_CE
+   declaring component Design1_1
+   declaring signal ce1
+   instantiating component Design1_1_CE
+      inspecting inputs for port en
+         found signals1 with no index attribute
+      inspecting inputs for port clk
+         found signals4 with no index attribute
+      inspecting inputs for port rst
+         found signals5 with no index attribute
+      inspecting inputs for port ce1
+         found signals2 with no index attribute
+      indexing connections for port ce1
+         0: 
+      indexing connections for port clk
+         0: 
+      indexing connections for port en
+         0: 
+      indexing connections for port rst
+         0: 
+      component is not inline, using component instantiation.
+      component is non-unique, code generation was done previously.
+   instantiating component Design1_1
+      inspecting inputs for port dp1
+         found signaldp1 with no index attribute
+      inspecting inputs for port ce1
+         found signals3 with no index attribute
+      inspecting inputs for port clk
+         found signals6 with no index attribute
+      inspecting inputs for port rst
+         found signals7 with no index attribute
+      inspecting inputs for port dp2
+         found signaldp2 with no index attribute
+      indexing connections for port ce1
+         0: 
+      indexing connections for port clk
+         0: 
+      indexing connections for port dp1
+         0: 
+      indexing connections for port dp2
+         0: 
+      indexing connections for port rst
+         0: 
+      component is not inline, using component instantiation.
+      component is non-unique, code generation was done previously.
+      port ce has connected signals:
+      port is an input
+      output signals: 1
+         signal: s1
+         connected to: Design1_1_CE_inst
+         which is a module.
+      port clk has connected signals:
+      port is an input
+      output signals: 2
+         signal: s4
+         connected to: Design1_1_CE_inst
+         which is a module.
+         signal: s6
+         connected to: Design1_1_inst
+         which is a module.
+      port dp1 has connected signals:
+      port is an input
+      output signals: 1
+         signal: dp1
+         connected to: Design1_1_inst
+         which is a module.
+      port dp2 has connected signals:
+       port is an output
+      input signals: 1
+         signal: dp2
+         connected to: Design1_1_inst
+         which is a module.
+      port rst has connected signals:
+      port is an input
+      output signals: 2
+         signal: s5
+         connected to: Design1_1_CE_inst
+         which is a module.
+         signal: s7
+         connected to: Design1_1_inst
+         which is a module.
+Code generation required on component Design1_1_SimTB.
+   Adding additional includes for component Design1_1_SimTB
+   Found additional include(s):
+      include: p_fxp
+	component p_fxp commands:
+	%%Inline(library work;)
+	%%Inline(use work.p_fxp.all;)
+      include: p_testbench
+	component p_testbench commands:
+	%%Inline(library work;)
+	%%Inline(use work.p_testbench.all;)
+      include: textio
+	component textio commands:
+	%%Inline(library std;)
+	%%Inline(use std.textio.all;)
+   declaring entity.
+   opening architecture.
+   component ClockGenerator1 is inline so does not need declared.
+   declaring component Design1_1_CE
+   declaring component Design1_1
+   declaring component EnableGenerator
+   declaring component FileInputProcess
+   declaring component FileOutputProcess
+   component ResetProcess1 is inline so does not need declared.
+   declaring signal UUT_dp1
+   declaring signal UUT_dp2
+   declaring signal ce
+   declaring signal ce1
+   declaring signal clk
+   declaring signal en
+   declaring signal rst
+   declaring signal stop
+   instantiating component ClockGenerator1
+      inspecting inputs for port Finished
+         found signals1 with no index attribute
+      inspecting inputs for port Clock
+         found signals2 with no index attribute
+      indexing connections for port Clock
+         0: 
+      indexing connections for port Finished
+         0: 
+      component is inline, code generation required.
+    Adding syntax %%G[ClockCycleTime]=1.04166666666666660000e-005
+	component ClockGenerator commands:
+	%%SP(%%TemplateDir/ClockGenerator.vho)
+   instantiating component Design1_1_CE
+      inspecting inputs for port clk
+         found signals9 with no index attribute
+      inspecting inputs for port rst
+         found signals10 with no index attribute
+      inspecting inputs for port en
+         found signals11 with no index attribute
+      inspecting inputs for port ce1
+         found signals12 with no index attribute
+      indexing connections for port ce1
+         0: 
+      indexing connections for port clk
+         0: 
+      indexing connections for port en
+         0: 
+      indexing connections for port rst
+         0: 
+      component is not inline, using component instantiation.
+      component is non-unique, code generation was done previously.
+   instantiating component Design1_1
+      inspecting inputs for port ce1
+         found signals13 with no index attribute
+      inspecting inputs for port dp1
+         found signals14 with no index attribute
+      inspecting inputs for port clk
+         found signals26 with no index attribute
+      inspecting inputs for port rst
+         found signals27 with no index attribute
+      inspecting inputs for port dp2
+         found signals20 with no index attribute
+      indexing connections for port ce1
+         0: 
+      indexing connections for port clk
+         0: 
+      indexing connections for port dp1
+         0: 
+      indexing connections for port dp2
+         0: 
+      indexing connections for port rst
+         0: 
+      component is not inline, using component instantiation.
+      component is non-unique, code generation was done previously.
+   instantiating component EnableGenerator
+      inspecting inputs for port clk
+         found signals5 with no index attribute
+      inspecting inputs for port rst
+         found signals6 with no index attribute
+      inspecting inputs for port en
+         found signals7 with no index attribute
+      inspecting inputs for port ce
+         found signals8 with no index attribute
+      indexing connections for port ce
+         0: 
+      indexing connections for port clk
+         0: 
+      indexing connections for port en
+         0: 
+      indexing connections for port rst
+         0: 
+      component is not inline, using component instantiation.
+      component is non-unique, code generation was done previously.
+   instantiating component FileInputProcess
+      inspecting inputs for port clk
+         found signals15 with no index attribute
+      inspecting inputs for port rst
+         found signals16 with no index attribute
+      inspecting inputs for port en
+         found signals17 with no index attribute
+      inspecting inputs for port stop
+         found signals18 with no index attribute
+      inspecting inputs for port dataOut
+         found signals19 with no index attribute
+      indexing connections for port clk
+         0: 
+      indexing connections for port dataOut
+         0: 
+      indexing connections for port en
+         0: 
+      indexing connections for port rst
+         0: 
+      indexing connections for port stop
+         0: 
+      component is not inline, using component instantiation.
+      component is non-unique, code generation was done previously.
+   instantiating component FileOutputProcess
+      inspecting inputs for port clk
+         found signals21 with no index attribute
+      inspecting inputs for port rst
+         found signals22 with no index attribute
+      inspecting inputs for port en
+         found signals23 with no index attribute
+      inspecting inputs for port stop
+         found signals24 with no index attribute
+      inspecting inputs for port dataIn
+         found signals25 with no index attribute
+      indexing connections for port clk
+         0: 
+      indexing connections for port dataIn
+         0: 
+      indexing connections for port en
+         0: 
+      indexing connections for port rst
+         0: 
+      indexing connections for port stop
+         0: 
+      component is not inline, using component instantiation.
+      component is non-unique, code generation was done previously.
+   instantiating component ResetProcess1
+      inspecting inputs for port Reset
+         found signals3 with no index attribute
+      inspecting inputs for port Enable
+         found signals4 with no index attribute
+      indexing connections for port Enable
+         0: 
+      indexing connections for port Reset
+         0: 
+      component is inline, code generation required.
+    Adding syntax %%G[ClockCycleTime]=1.04166666666666660000e-005
+	component ResetProcess commands:
+	%%SP(%%TemplateDir/ResetProcess.vho)
+Code generation not required on component EnableGenerator.
+Code generation not required on component FIR_Fxp.
+Code generation not required on component FileInputProcess.
+Code generation not required on component FileOutputProcess.
+Code generation not required on component ResetProcess.
+subgraph code generation finished.
+   Generating subgraph HDL finished.
+   Building HDL filename list...
+   Building HDL filename list finished.
+   Generating simulation scripts...
+   Generating batch file??
+   Generating batch file
+   Generating simulation scripts finished.
+Code generation complete.

@@ -54,7 +54,7 @@ Debug/AdvFxsDSP_heaptab.doj :AdvFxsDSP_heaptab.c
 	@echo ".\ExceptionHandler-BF537.asm"
 	$(VDSP)/easmblkfn.exe .\ExceptionHandler-BF537.asm -proc ADSP-BF537 -g -D_ADI_THREADS -si-revision 0.3 -o .\Debug\ExceptionHandler-BF537.doj -MM
 
-Debug/main.doj :main.c main.h VDK.h $(VDSP)/Blackfin/include/defBF537.h $(VDSP)/Blackfin/include/def_LPBlackfin.h $(VDSP)/Blackfin/include/defBF534.h $(VDSP)/Blackfin/include/VDK_Public.h $(VDSP)/Blackfin/include/limits.h $(VDSP)/Blackfin/include/yvals.h $(VDSP)/Blackfin/include/fract_math.h $(VDSP)/Blackfin/include/fract_typedef.h $(VDSP)/Blackfin/include/ccblkfn.h $(VDSP)/Blackfin/include/stdlib.h $(VDSP)/Blackfin/include/stdlib_bf.h $(VDSP)/Blackfin/include/fr2x16_math.h $(VDSP)/Blackfin/include/fr2x16_base.h $(VDSP)/Blackfin/include/fr2x16_typedef.h $(VDSP)/Blackfin/include/r2x16_typedef.h $(VDSP)/Blackfin/include/raw_typedef.h $(VDSP)/Blackfin/include/r2x16_base.h lib/uart.h $(VDSP)/Blackfin/include/cdefBF537.h $(VDSP)/Blackfin/include/cdefBF534.h $(VDSP)/Blackfin/include/cdef_LPBlackfin.h $(VDSP)/Blackfin/include/sys/exception.h 
+./Debug/main.doj :main.c main.h VDK.h $(VDSP)/Blackfin/include/defBF537.h $(VDSP)/Blackfin/include/def_LPBlackfin.h $(VDSP)/Blackfin/include/defBF534.h $(VDSP)/Blackfin/include/VDK_Public.h $(VDSP)/Blackfin/include/limits.h $(VDSP)/Blackfin/include/yvals.h $(VDSP)/Blackfin/include/fract_math.h $(VDSP)/Blackfin/include/fract_typedef.h $(VDSP)/Blackfin/include/ccblkfn.h $(VDSP)/Blackfin/include/stdlib.h $(VDSP)/Blackfin/include/stdlib_bf.h $(VDSP)/Blackfin/include/fr2x16_math.h $(VDSP)/Blackfin/include/fr2x16_base.h $(VDSP)/Blackfin/include/fr2x16_typedef.h $(VDSP)/Blackfin/include/r2x16_typedef.h $(VDSP)/Blackfin/include/raw_typedef.h $(VDSP)/Blackfin/include/r2x16_base.h lib/uart.h $(VDSP)/Blackfin/include/cdefBF537.h $(VDSP)/Blackfin/include/cdefBF534.h $(VDSP)/Blackfin/include/cdef_LPBlackfin.h $(VDSP)/Blackfin/include/sys/exception.h 
 	@echo ".\main.c"
 	$(VDSP)/ccblkfn.exe -c .\main.c -g -no-multiline -double-size-32 -decls-strong -warn-protos -threads -si-revision 0.3 -proc ADSP-BF537 -o .\Debug\main.doj -MM
 
@@ -62,7 +62,7 @@ Debug/uart.doj :lib/uart.c lib/uart.h $(VDSP)/Blackfin/include/cdefBF537.h $(VDS
 	@echo ".\lib\uart.c"
 	$(VDSP)/ccblkfn.exe -c .\lib\uart.c -g -no-multiline -double-size-32 -decls-strong -warn-protos -threads -si-revision 0.3 -proc ADSP-BF537 -o .\Debug\uart.doj -MM
 
-Debug/VDK.doj :VDK.cpp VDK.h $(VDSP)/Blackfin/include/defBF537.h $(VDSP)/Blackfin/include/def_LPBlackfin.h $(VDSP)/Blackfin/include/defBF534.h $(VDSP)/Blackfin/include/VDK_Public.h $(VDSP)/Blackfin/include/limits.h $(VDSP)/Blackfin/include/yvals.h $(VDSP)/Blackfin/include/fract_math.h $(VDSP)/Blackfin/include/fract_typedef.h $(VDSP)/Blackfin/include/ccblkfn.h $(VDSP)/Blackfin/include/stdlib.h $(VDSP)/Blackfin/include/stdlib_bf.h $(VDSP)/Blackfin/include/fr2x16_math.h $(VDSP)/Blackfin/include/fr2x16_base.h $(VDSP)/Blackfin/include/fr2x16_typedef.h $(VDSP)/Blackfin/include/r2x16_typedef.h $(VDSP)/Blackfin/include/raw_typedef.h $(VDSP)/Blackfin/include/r2x16_base.h $(VDSP)/Blackfin/include/assert.h $(VDSP)/Blackfin/include/cdefBF537.h $(VDSP)/Blackfin/include/cdefBF534.h $(VDSP)/Blackfin/include/cdef_LPBlackfin.h $(VDSP)/Blackfin/include/cplus/new $(VDSP)/Blackfin/include/cplus/exception $(VDSP)/Blackfin/include/cplus/xstddef $(VDSP)/Blackfin/include/cplus/cstddef $(VDSP)/Blackfin/include/stddef.h $(VDSP)/Blackfin/include/string.h $(VDSP)/Blackfin/include/heapinfo.h $(VDSP)/Blackfin/include/xalloc.h $(VDSP)/Blackfin/include/VDK_Internals.h $(VDSP)/Blackfin/include/sys/exception.h main.h 
+./Debug/VDK.doj :VDK.cpp VDK.h $(VDSP)/Blackfin/include/defBF537.h $(VDSP)/Blackfin/include/def_LPBlackfin.h $(VDSP)/Blackfin/include/defBF534.h $(VDSP)/Blackfin/include/VDK_Public.h $(VDSP)/Blackfin/include/limits.h $(VDSP)/Blackfin/include/yvals.h $(VDSP)/Blackfin/include/fract_math.h $(VDSP)/Blackfin/include/fract_typedef.h $(VDSP)/Blackfin/include/ccblkfn.h $(VDSP)/Blackfin/include/stdlib.h $(VDSP)/Blackfin/include/stdlib_bf.h $(VDSP)/Blackfin/include/fr2x16_math.h $(VDSP)/Blackfin/include/fr2x16_base.h $(VDSP)/Blackfin/include/fr2x16_typedef.h $(VDSP)/Blackfin/include/r2x16_typedef.h $(VDSP)/Blackfin/include/raw_typedef.h $(VDSP)/Blackfin/include/r2x16_base.h $(VDSP)/Blackfin/include/assert.h $(VDSP)/Blackfin/include/cdefBF537.h $(VDSP)/Blackfin/include/cdefBF534.h $(VDSP)/Blackfin/include/cdef_LPBlackfin.h $(VDSP)/Blackfin/include/cplus/new $(VDSP)/Blackfin/include/cplus/exception $(VDSP)/Blackfin/include/cplus/xstddef $(VDSP)/Blackfin/include/cplus/cstddef $(VDSP)/Blackfin/include/stddef.h $(VDSP)/Blackfin/include/string.h $(VDSP)/Blackfin/include/heapinfo.h $(VDSP)/Blackfin/include/xalloc.h $(VDSP)/Blackfin/include/VDK_Internals.h $(VDSP)/Blackfin/include/sys/exception.h main.h main.C lib/uart.h lib/uart.C 
 	@echo ".\VDK.cpp"
 	$(VDSP)/ccblkfn.exe -c .\VDK.cpp -c++ -g -ignore-std -no-multiline -double-size-32 -decls-strong -warn-protos -threads -si-revision 0.3 -proc ADSP-BF537 -o .\Debug\VDK.doj -MM
 
@@ -78,9 +78,9 @@ AdvFxsDSP_Debug_clean:
 	-$(RM) ".\Debug\AdvFxsDSP_basiccrt.doj"
 	-$(RM) "Debug\AdvFxsDSP_heaptab.doj"
 	-$(RM) ".\Debug\ExceptionHandler-BF537.doj"
-	-$(RM) "Debug\main.doj"
+	-$(RM) ".\Debug\main.doj"
 	-$(RM) "Debug\uart.doj"
-	-$(RM) "Debug\VDK.doj"
+	-$(RM) ".\Debug\VDK.doj"
 	-$(RM) ".\Debug\AdvFxsDSP.dxe"
 	-$(RM) ".\Debug\*.ipa"
 	-$(RM) ".\Debug\*.opa"

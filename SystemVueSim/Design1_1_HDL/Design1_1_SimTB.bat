@@ -1,0 +1,1 @@
+D:\intelFPGA_lite\18.1\modelsim_ase\win32aloem\vsim -do Design1_1_mtisim.do

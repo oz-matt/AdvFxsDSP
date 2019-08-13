@@ -1,0 +1,580 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/dspws/AdvFxsDSP/SystemVueSim/HDL Cosimulation/advfxsws_Design1__Subnetwork2_HDLSim
+Edesign1_1
+Z1 w1565667959
+Z2 DPx4 work 5 p_fxp 0 22 P0:Ef7Cg?K1Y0jd2G3L2;2
+Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/Design1_1.vhd
+Z7 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/Design1_1.vhd
+l0
+L14
+VQWOao9nEZ_I:=o5:h]K4F1
+!s100 `FYfI02d5I[]L3NazYWil2
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1565667995
+!i10b 1
+Z10 !s108 1565667995.000000
+Z11 !s90 -nolock|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/p_fxp.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/Design1_1.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/FIR_Fxp1.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/FIR_Fxp1_GNRC.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/p_testbench.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_CE.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_SimTB.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/EnableGenerator.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileInputProcess.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileOutputProcess.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_CoSimWrapper.vhd|
+Z12 !s107 D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_CoSimWrapper.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileOutputProcess.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileInputProcess.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/EnableGenerator.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_SimTB.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_CE.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/p_testbench.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/FIR_Fxp1_GNRC.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/FIR_Fxp1.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/Design1_1.vhd|D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/p_fxp.vhd|
+!i113 1
+Z13 o-nolock
+Z14 tExplicit 1 CvgOpt 0
+Adesign1_1_arch
+R2
+R3
+R4
+R5
+DEx4 work 9 design1_1 0 22 QWOao9nEZ_I:=o5:h]K4F1
+l54
+L24
+V2o4SKbmM6EV9J<fgIlboA2
+!s100 E?]Y;0<]<bom45mh6kXQZ0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edesign1_1_ce
+R1
+R2
+R3
+R4
+R5
+R0
+Z15 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_CE.vhd
+Z16 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_CE.vhd
+l0
+L14
+V@^_`z3_GfCG5Vo21^MCR70
+!s100 C?2iOh:Zb3eZW_]3WCef:2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Adesign1_1_ce_arch
+R2
+R3
+R4
+R5
+DEx4 work 12 design1_1_ce 0 22 @^_`z3_GfCG5Vo21^MCR70
+l36
+L23
+V=[EJNF?[SYAch^kFZ_kCW2
+!s100 JhzlMdD:jDXom;InDK[Bz3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edesign1_1_cosimwrapper
+R1
+R2
+R3
+R4
+R5
+R0
+Z17 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_CoSimWrapper.vhd
+Z18 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_CoSimWrapper.vhd
+l0
+L14
+VKd4f;Da1b;z?SF>VaDeL01
+!s100 o30h=B0d6PheBMh>0783K3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Adesign1_1_cosimwrapper_arch
+R2
+R3
+R4
+R5
+Z19 DEx4 work 22 design1_1_cosimwrapper 0 22 Kd4f;Da1b;z?SF>VaDeL01
+l45
+L24
+V<BdFfZa^8EYU4nUOh3AnQ0
+!s100 S]lH3V4ekPoB9P1di5`>50
+R8
+32
+Z20 !s110 1565667996
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edesign1_1_cosimwrappertopvhdlcosim_c
+Z21 w1565667996
+R3
+R4
+R5
+R2
+R0
+Z22 8D:/dspws/AdvFxsDSP/SystemVueSim/HDL Cosimulation/advfxsws_Design1__Subnetwork2_HDLSim/CosimDesign1_1_CoSimWrapperTopVHDL.vhdl
+Z23 FD:/dspws/AdvFxsDSP/SystemVueSim/HDL Cosimulation/advfxsws_Design1__Subnetwork2_HDLSim/CosimDesign1_1_CoSimWrapperTopVHDL.vhdl
+l0
+L50
+V7gd1ICA^1zfX`>ZdjnMnJ0
+!s100 `KI8ElVjSKD:W<VcT<60A1
+R8
+32
+R20
+!i10b 1
+Z24 !s108 1565667996.000000
+Z25 !s90 -nolock|D:/dspws/AdvFxsDSP/SystemVueSim/HDL Cosimulation/advfxsws_Design1__Subnetwork2_HDLSim/CosimDesign1_1_CoSimWrapperTopVHDL.vhdl|
+Z26 !s107 D:/dspws/AdvFxsDSP/SystemVueSim/HDL Cosimulation/advfxsws_Design1__Subnetwork2_HDLSim/CosimDesign1_1_CoSimWrapperTopVHDL.vhdl|
+!i113 1
+R13
+R14
+Aarch
+R19
+Z27 DEx4 work 32 design1_1_cosimwrappervhdl_cosim 0 22 nmf9m:ezS6_S9DZX7UQie1
+R3
+R4
+R5
+R2
+DEx4 work 36 design1_1_cosimwrappertopvhdlcosim_c 0 22 7gd1ICA^1zfX`>ZdjnMnJ0
+l112
+L65
+VbChTQcO:03^7T50GX>PS02
+!s100 QZWFQ<]dJT^Dg0mm14>HF3
+R8
+32
+R20
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R13
+R14
+Edesign1_1_cosimwrappervhdl_cosim
+R21
+R3
+R2
+R4
+R5
+R0
+R22
+R23
+l0
+L15
+Vnmf9m:ezS6_S9DZX7UQie1
+!s100 HbSTH=EE_7z;gfnY4b^Xe2
+R8
+32
+R20
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R13
+R14
+Aarch
+R3
+R2
+R4
+R5
+R27
+l40
+L37
+V>8Tk]8^?iV]YSK:;6HF401
+!s100 z0D?nOWXQg5W_0NFHcBkU2
+R8
+32
+xfOa
+R20
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R13
+R14
+Edesign1_1_simtb
+R1
+Z28 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z29 DPx4 work 11 p_testbench 0 22 H1E2ggPN6E3iEGGlOOFNg3
+R2
+R3
+R4
+R5
+R0
+Z30 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_SimTB.vhd
+Z31 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/Design1_1_SimTB.vhd
+l0
+L18
+VVN8TRnAdiOGCKcm3kKNE31
+!s100 1V0GmG20zRlLFPK0fh?4;3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Adesign1_1_simtb_arch
+R28
+R29
+R2
+R3
+R4
+R5
+DEx4 work 15 design1_1_simtb 0 22 VN8TRnAdiOGCKcm3kKNE31
+l85
+L22
+V^4SX84`gd?A9105K;ezE10
+!s100 1T;^EFJ@]RdkC?TGRSK``1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Eenablegenerator
+Z32 w1430181602
+R2
+R3
+R4
+R5
+R0
+Z33 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/EnableGenerator.vhd
+Z34 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/EnableGenerator.vhd
+l0
+L32
+VBXfF=?MCgnIj?WYoQQJRX3
+!s100 Ea=?PI`AWc<mVg1Bb7U[d0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Aenablegeneratorarch
+R2
+R3
+R4
+R5
+DEx4 work 15 enablegenerator 0 22 BXfF=?MCgnIj?WYoQQJRX3
+l51
+L42
+Ve?H<;K123L4kANIhJ:eaN0
+!s100 CYH=Sh;]HhC^ZBfKgNI501
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Efileinputprocess
+R32
+R2
+R28
+R29
+R3
+R4
+R5
+R0
+Z35 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileInputProcess.vhd
+Z36 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileInputProcess.vhd
+l0
+L33
+VW@<ZfCIRCX1afSV];WTVb3
+!s100 ldDSH7Pj1FlWEICY3ejbL0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Afileinputprocessarch
+R2
+R28
+R29
+R3
+R4
+R5
+DEx4 work 16 fileinputprocess 0 22 W@<ZfCIRCX1afSV];WTVb3
+l54
+L49
+VMIPXKfe9I@]EWEhWFVP1N2
+!s100 8Z7WP4:NbDO8ZZVRVCQZc1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Efileoutputprocess
+R32
+R2
+R28
+R29
+R3
+R4
+R5
+R0
+Z37 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileOutputProcess.vhd
+Z38 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/FileOutputProcess.vhd
+l0
+L32
+V=EAYiRkCP`Ym8VKCciPfj0
+!s100 HS8:_YzD;Q49gSPBhWT3g1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Afileoutputprocessarch
+R2
+R28
+R29
+R3
+R4
+R5
+DEx4 work 17 fileoutputprocess 0 22 =EAYiRkCP`Ym8VKCciPfj0
+l48
+L47
+VF@fBhnFnf<F_WNT7IBRe22
+!s100 NE2`EjGmUiJPJnen;z2=E0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Efir_fxp1
+R1
+R2
+R3
+R4
+R5
+R0
+Z39 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/FIR_Fxp1.vhd
+Z40 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/FIR_Fxp1.vhd
+l0
+L11
+Vf]o2a@H9jA;ci8;DII^<Q0
+!s100 9MZW@8ZKWklQ8]OFel4O]3
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Afir_fxp1_a
+R2
+R3
+R4
+R5
+DEx4 work 8 fir_fxp1 0 22 f]o2a@H9jA;ci8;DII^<Q0
+l72
+L52
+VHiiLQf?hg8g=4M;XL<C^l3
+!s100 IYGN_8k>ig7No5P<R]SEZ0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Efir_fxp1_gnrc
+R1
+R3
+R4
+R5
+R0
+Z41 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/FIR_Fxp1_GNRC.vhd
+Z42 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/FIR_Fxp1_GNRC.vhd
+l0
+L5
+V<GU;l`[h[2Iea[ozk`K^R2
+!s100 R>Y<IbmXgO_WJI;_J1R<n0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Aafir_fxp1_gnrc
+R3
+R4
+R5
+DEx4 work 13 fir_fxp1_gnrc 0 22 <GU;l`[h[2Iea[ozk`K^R2
+l102
+L18
+V6YhPWfPAgFm?B]DB[H?AL0
+!s100 faY;0=iHzZoh33fUQ7H5G0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Pp_fxp
+R3
+R4
+R5
+R32
+R0
+Z43 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/p_fxp.vhd
+Z44 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_source/p_fxp.vhd
+l0
+L27
+VP0:Ef7Cg?K1Y0jd2G3L2;2
+!s100 gU83fC2`g<2fkHAJQ5;XJ1
+R8
+32
+b1
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Bbody
+R2
+R3
+R4
+R5
+l0
+L165
+VU<m;2L`gmBaMick^6@`SZ0
+!s100 ceFe[5AkndR;N:<>k>4Vk0
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Pp_testbench
+R28
+R4
+R5
+R32
+R0
+Z45 8D:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/p_testbench.vhd
+Z46 FD:/dspws/AdvFxsDSP/SystemVueSim/Design1_1_HDL/VHDL_testbench/p_testbench.vhd
+l0
+L28
+VH1E2ggPN6E3iEGGlOOFNg3
+!s100 nb=jGnS?RJo_g[`mcY7UE3
+R8
+32
+b1
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Bbody
+R29
+R28
+R4
+R5
+l0
+L72
+VHV0dM<Q;XOU3aAD7`>fIO1
+!s100 Bhe<RQmNZc5SYFf]LI:lN2
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14

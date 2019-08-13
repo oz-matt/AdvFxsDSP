@@ -61,6 +61,11 @@ main_RunFunction(void **inPtr)
 	
     while (1)
     {
+        
+        volatile int i = *pPORTFIO_DIR;
+        volatile int j = *pPORTF_FER;
+        
+        i = j;
         /*if (flag)
         {
             flag = 0;
