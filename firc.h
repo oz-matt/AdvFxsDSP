@@ -1,6 +1,8 @@
 #ifndef _FIRC_H_
 #define _FIRC_H_
 
+#define NUM_FIR_FILTER_TAPS 43
+
 
 #define INIT_FIR_FILTER_COEFFICIENTS \
 float firc[43] = { \
@@ -50,3 +52,4 @@ float firc[43] = { \
 }
 
 #endif
+

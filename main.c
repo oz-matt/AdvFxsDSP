@@ -28,7 +28,7 @@ int iChannel0RightOut, iChannel1RightOut;
 // SPORT0 DMA transmit buffer
 int iTxBuffer1[2];
 // SPORT0 DMA receive buffer
-int iRxBuffer1[2];
+int iRxBuffer1[15];
 
 INIT_FIR_FILTER_COEFFICIENTS;
 
@@ -54,25 +54,9 @@ EX_INTERRUPT_HANDLER(Sport0_RX_ISR)
 	iChannel0LeftIn = iRxBuffer1[INTERNAL_ADC_L0];
 	iChannel0RightIn = iRxBuffer1[INTERNAL_ADC_R0];
 	
-	volatile int k1 = iRxBuffer1[0];
-	volatile int k2 = iRxBuffer1[1];
-	volatile int k3 = iRxBuffer1[2];
-	volatile int k4 = iRxBuffer1[3];
-	volatile int k5 = iRxBuffer1[4];
-	volatile int k6 = iRxBuffer1[5];
-	volatile int k7 = iRxBuffer1[6];
-	volatile int k8 = iRxBuffer1[7];
-	volatile int k9 = iRxBuffer1[8];
-	volatile int k10 = iRxBuffer1[9];
-	volatile int k11 = iRxBuffer1[10];
-	volatile int k12 = iRxBuffer1[11];
-	volatile int k13 = iRxBuffer1[12];
-	volatile int k14 = iRxBuffer1[13];
-	volatile int k15 = iRxBuffer1[14];
+	iChannel0LeftOut = iChannel0LeftIn;
+	iChannel0RightOut  = iChannel0RightIn;
 	
-	// call function that contains user code
-	//Process_Data();
-
 	// copy processed data from variables into dma output buffer
 	iTxBuffer1[INTERNAL_DAC_L0] = iChannel0LeftOut;
 	iTxBuffer1[INTERNAL_DAC_R0] = iChannel0RightOut;
@@ -92,7 +76,7 @@ main_RunFunction(void **inPtr)
 	*pTIMER0_WIDTH		= 0x00800000;
 	*pTIMER_ENABLE		= 0x0001;
 	
-	*pSIC_IAR0 			= 0xffffffff;
+	//*pSIC_IAR0 			= 0xffffffff;
 	*pSIC_IAR1 			= 0xffffffff;
 	*pSIC_IAR2 			= 0xffff4fff; // Timer0 interrupt enabled with priority of VG11 
 	*pSIC_IAR3 			= 0xffffffff;
@@ -118,9 +102,6 @@ main_RunFunction(void **inPtr)
 	Init_Interrupts();
 	Enable_DMA_Sport0();
 
-	
-	
-	
     while (1)
     {
         

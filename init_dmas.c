@@ -1,4 +1,5 @@
 #include "audio.h"
+#include "firc.h"
 
 /*****************************************************************************
  Function:	Init_Flags													
@@ -14,13 +15,13 @@ void Init_Flags(void)
 	temp = *pPORTF_FER;
 	temp++;
     *pPORTF_FER = 0x0000;
-    *pPORTF_FER = 0x0000;
+    *pPORTF_FER = 0x0003;
 
     // set PORTF direction register
-    *pPORTFIO_DIR = 0x1FC0;
+    *pPORTFIO_DIR |= 0x1FC0;
         
    	// set PORTF input enable register
-    *pPORTFIO_INEN = 0x003C;
+    *pPORTFIO_INEN |= 0x003C;
          
 	// set PORTF clear register
     *pPORTFIO_CLEAR = 0x0FC0;
@@ -86,13 +87,16 @@ void Init_DMA(void)
 {
 	// Configure DMA3
 	// 32-bit transfers, Interrupt on completion, Autobuffer mode
-	*pDMA3_CONFIG = WNR | WDSIZE_32 | DI_EN | FLOW_1;
+	*pDMA3_CONFIG = WNR | WDSIZE_32| DI_EN | FLOW_1 ;
+	//*pDMA3_CONFIG = 0x10DA;
 	// Start address of data buffer
 	*pDMA3_START_ADDR = iRxBuffer1;
 	// DMA loop count
-	*pDMA3_X_COUNT = 16;
+	*pDMA3_X_COUNT = 2;
 	// DMA loop address increment
 	*pDMA3_X_MODIFY = 4;
+	//*pDMA3_Y_MODIFY = 4;
+	//*pDMA3_Y_COUNT = 16;
 	
 
 	// Configure DMA4
@@ -132,16 +136,16 @@ void Init_Interrupts(void)
 {
 	// Set Sport0 RX (DMA3) interrupt priority to 2 = IVG9 
 	*pSIC_IAR0 = 0xff2fffff;
-	*pSIC_IAR1 = 0xffffffff;
-	*pSIC_IAR2 = 0xffffffff;
-	*pSIC_IAR3 = 0xffffffff;
+	//*pSIC_IAR1 = 0xffffffff;
+	//*pSIC_IAR2 = 0xffffffff;
+	//*pSIC_IAR3 = 0xffffffff;
 
 	// assign ISRs to interrupt vectors
 	// Sport0 RX ISR -> IVG 9
 	register_handler(ik_ivg9, Sport0_RX_ISR);
 
 	// enable Sport0 RX interrupt
-	*pSIC_IMASK = 0x00000020;
+	*pSIC_IMASK |= 0x00000020;
 }
 
 
