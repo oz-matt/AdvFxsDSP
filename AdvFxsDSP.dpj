@@ -109,6 +109,8 @@
 			<files>
 				<file name=".\audio.h">
 				</file>
+				<file name=".\firc.h">
+				</file>
 				<file name=".\main.h">
 				</file>
 				<file name=".\lib\uart.h">

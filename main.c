@@ -13,6 +13,7 @@
 #include <cdefBF537.h>
 #include <sys\exception.h>
 #include "audio.h"
+#include "firc.h"
 
 int flag = 0;
 
@@ -28,6 +29,8 @@ int iChannel0RightOut, iChannel1RightOut;
 int iTxBuffer1[2];
 // SPORT0 DMA receive buffer
 int iRxBuffer1[2];
+
+INIT_FIR_FILTER_COEFFICIENTS;
 
 
 EX_INTERRUPT_HANDLER(Timer0_ISR)
