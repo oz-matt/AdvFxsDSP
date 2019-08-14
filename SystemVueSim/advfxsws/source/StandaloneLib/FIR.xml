@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns="http://keysight.com/schemas/systemvue" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://keysight.com/schemas/systemvue systemvue_model.xsd" Name="FIR" DisplayName="FIR" Description="FIR Filter">
+	<Parameters>
+		<Parameter Name="m_Taps" DataType="DoubleArray" ArraySizeVariableName="m_iTapsSize" DisplayName="Taps" Description="Filter tap values" DynamicUpdate="false" SchematicDisplay="true"  Unit="None">
+			<Default>
+				<Array>
+					<Dimensions>
+						<Dimension Size="1"/>
+						<Dimension Size="8"/>
+					</Dimensions>
+					<Elements>
+						<E>-0.040609</E>
+						<E>-0.001628</E>
+						<E>0.17853</E>
+						<E>0.37665</E>
+						<E>0.37665</E>
+						<E>0.17853</E>
+						<E>-0.001628</E>
+						<E>-0.040609</E>
+					</Elements>
+				</Array>
+			</Default>
+		</Parameter>
+		<Parameter Name="m_iDecimation" DataType="Integer" DisplayName="Decimation" Description="Decimation ratio" DynamicUpdate="false" SchematicDisplay="false"  Unit="None">
+			<Default>
+				<Scalar>1</Scalar>
+			</Default>
+		</Parameter>
+		<Parameter Name="m_iDecimationPhase" DataType="Integer" DisplayName="DecimationPhase" Description="Decimation phase" DynamicUpdate="false" SchematicDisplay="false"  Unit="None">
+			<Default>
+				<Scalar>0</Scalar>
+			</Default>
+		</Parameter>
+		<Parameter Name="m_iInterpolation" DataType="Integer" DisplayName="Interpolation" Description="Interpolation ratio" DynamicUpdate="false" SchematicDisplay="false"  Unit="None">
+			<Default>
+				<Scalar>1</Scalar>
+			</Default>
+		</Parameter>
+	</Parameters>
+	<Ports>
+		<Port Name="m_input" DataType="Double" Direction="Input" Implementation="CircularBuffer" DisplayName="input" Optional="false" ZeroHistoryDepth="false"/>
+		<Port Name="m_output" DataType="Double" Direction="Output" Implementation="CircularBuffer" DisplayName="output" Optional="false" ZeroHistoryDepth="false"/>
+	</Ports>
+	<HeaderFiles>
+		<File>FIR.h</File>
+	</HeaderFiles>
+	<SourceFiles>
+		<File>FIR.cpp</File>
+	</SourceFiles>
+</Model>
+

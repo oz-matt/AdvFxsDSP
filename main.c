@@ -12,8 +12,23 @@
 #include "lib\uart.h"
 #include <cdefBF537.h>
 #include <sys\exception.h>
+#include "audio.h"
 
 int flag = 0;
+
+// left input data from AD1871
+int iChannel0LeftIn, iChannel1LeftIn;
+// right input data from AD1871
+int iChannel0RightIn, iChannel1RightIn;
+// left ouput data for AD1854	
+int iChannel0LeftOut, iChannel1LeftOut;
+// right ouput data for AD1854
+int iChannel0RightOut, iChannel1RightOut;
+// SPORT0 DMA transmit buffer
+int iTxBuffer1[2];
+// SPORT0 DMA receive buffer
+int iRxBuffer1[2];
+
 
 EX_INTERRUPT_HANDLER(Timer0_ISR)
 {
@@ -25,6 +40,40 @@ EX_INTERRUPT_HANDLER(Timer0_ISR)
 	//uart_send_char('y');
 	//*pUART0_THR			= 0x79;
 	//flag = 1;
+}
+
+EX_INTERRUPT_HANDLER(Sport0_RX_ISR)
+{
+	// confirm interrupt handling
+	*pDMA3_IRQ_STATUS = 0x0001;
+
+	// copy input data from dma input buffer into variables
+	iChannel0LeftIn = iRxBuffer1[INTERNAL_ADC_L0];
+	iChannel0RightIn = iRxBuffer1[INTERNAL_ADC_R0];
+	
+	volatile int k1 = iRxBuffer1[0];
+	volatile int k2 = iRxBuffer1[1];
+	volatile int k3 = iRxBuffer1[2];
+	volatile int k4 = iRxBuffer1[3];
+	volatile int k5 = iRxBuffer1[4];
+	volatile int k6 = iRxBuffer1[5];
+	volatile int k7 = iRxBuffer1[6];
+	volatile int k8 = iRxBuffer1[7];
+	volatile int k9 = iRxBuffer1[8];
+	volatile int k10 = iRxBuffer1[9];
+	volatile int k11 = iRxBuffer1[10];
+	volatile int k12 = iRxBuffer1[11];
+	volatile int k13 = iRxBuffer1[12];
+	volatile int k14 = iRxBuffer1[13];
+	volatile int k15 = iRxBuffer1[14];
+	
+	// call function that contains user code
+	//Process_Data();
+
+	// copy processed data from variables into dma output buffer
+	iTxBuffer1[INTERNAL_DAC_L0] = iChannel0LeftOut;
+	iTxBuffer1[INTERNAL_DAC_R0] = iChannel0RightOut;
+
 }
 
 void
@@ -58,6 +107,16 @@ main_RunFunction(void **inPtr)
 
 	// enable Timer0 interrupt
 	*pSIC_IMASK = 0x00080000;
+	
+	Init_Flags();
+	Audio_Reset();
+	Init_Sport0();
+	Init_DMA();
+	Init_Interrupts();
+	Enable_DMA_Sport0();
+
+	
+	
 	
     while (1)
     {

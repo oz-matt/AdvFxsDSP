@@ -1,0 +1,243 @@
+The system is: Windows - 6.2 - x86
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 4.7.3062.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/13/2019 12:31:49 PM.
+Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\2.8.10.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\2.8.10.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.lastbuildstate".
+Done Building Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\2.8.10.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.52
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/2.8.10.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags: 
+
+The output was:
+0
+Microsoft (R) Build Engine version 4.7.3062.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/13/2019 12:31:51 PM.
+Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\2.8.10.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /nologo /W0 /WX- /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\2.8.10.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.lastbuildstate".
+Done Building Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\2.8.10.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.02
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/2.8.10.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec3543133199.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=11.0
+Microsoft (R) Build Engine version 4.7.3062.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/13/2019 12:31:52 PM.
+Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\cmTryCompileExec3543133199.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec3543133199.dir\Debug\".
+  Creating directory "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec3543133199.dir\Debug\cmTryCompileExec3543133199.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3543133199.dir\Debug\\" /Fd"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3543133199.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.61030 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  testCCompiler.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec3543133199.dir\Debug\\" /Fd"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3543133199.pdb" /Gd /TC /analyze- /errorReport:queue testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3543133199.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3543133199.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec3543133199.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec3543133199.dir\Debug\testCCompiler.obj
+  cmTryCompileExec3543133199.vcxproj -> D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec3543133199.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec3543133199.dir\Debug\cmTryCompileExec3543133199.unsuccessfulbuild".
+  Touching "cmTryCompileExec3543133199.dir\Debug\cmTryCompileExec3543133199.lastbuildstate".
+Done Building Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\cmTryCompileExec3543133199.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.27
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec1490611629.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=11.0
+Microsoft (R) Build Engine version 4.7.3062.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/13/2019 12:31:54 PM.
+Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\cmTryCompileExec1490611629.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec1490611629.dir\Debug\".
+  Creating directory "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec1490611629.dir\Debug\cmTryCompileExec1490611629.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1490611629.dir\Debug\\" /Fd"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1490611629.pdb" /Gd /TC /analyze- /errorReport:queue "D:\Keysight\SystemVue2015.01\Tools\CMake\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.61030 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  CMakeCCompilerABI.c
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"cmTryCompileExec1490611629.dir\Debug\\" /Fd"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1490611629.pdb" /Gd /TC /analyze- /errorReport:queue "D:\Keysight\SystemVue2015.01\Tools\CMake\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1490611629.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1490611629.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec1490611629.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec1490611629.dir\Debug\CMakeCCompilerABI.obj
+  cmTryCompileExec1490611629.vcxproj -> D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec1490611629.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec1490611629.dir\Debug\cmTryCompileExec1490611629.unsuccessfulbuild".
+  Touching "cmTryCompileExec1490611629.dir\Debug\cmTryCompileExec1490611629.lastbuildstate".
+Done Building Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\cmTryCompileExec1490611629.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.86
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec2038463950.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=11.0
+Microsoft (R) Build Engine version 4.7.3062.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/13/2019 12:31:55 PM.
+Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\cmTryCompileExec2038463950.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec2038463950.dir\Debug\".
+  Creating directory "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec2038463950.dir\Debug\cmTryCompileExec2038463950.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2038463950.dir\Debug\\" /Fd"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2038463950.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.61030 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  testCXXCompiler.cxx
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2038463950.dir\Debug\\" /Fd"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2038463950.pdb" /Gd /TP /analyze- /errorReport:queue testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2038463950.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2038463950.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2038463950.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2038463950.dir\Debug\testCXXCompiler.obj
+  cmTryCompileExec2038463950.vcxproj -> D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2038463950.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec2038463950.dir\Debug\cmTryCompileExec2038463950.unsuccessfulbuild".
+  Touching "cmTryCompileExec2038463950.dir\Debug\cmTryCompileExec2038463950.lastbuildstate".
+Done Building Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\cmTryCompileExec2038463950.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.00
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp
+
+Run Build Command:C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe cmTryCompileExec2404336267.vcxproj /p:Configuration=Debug /p:VisualStudioVersion=11.0
+Microsoft (R) Build Engine version 4.7.3062.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 8/13/2019 12:31:56 PM.
+Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\cmTryCompileExec2404336267.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTryCompileExec2404336267.dir\Debug\".
+  Creating directory "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\".
+InitializeBuildStatus:
+  Creating "cmTryCompileExec2404336267.dir\Debug\cmTryCompileExec2404336267.unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2404336267.dir\Debug\\" /Fd"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2404336267.pdb" /Gd /TP /analyze- /errorReport:queue "D:\Keysight\SystemVue2015.01\Tools\CMake\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 17.00.61030 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  CMakeCXXCompilerABI.cpp
+  cl /c /Zi /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"cmTryCompileExec2404336267.dir\Debug\\" /Fd"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2404336267.pdb" /Gd /TP /analyze- /errorReport:queue "D:\Keysight\SystemVue2015.01\Tools\CMake\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:QUEUE /OUT:"D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2404336267.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2404336267.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012/CMakeFiles/CMakeTmp/Debug/cmTryCompileExec2404336267.lib" /MACHINE:X86 /SAFESEH  /machine:X86 /debug cmTryCompileExec2404336267.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTryCompileExec2404336267.vcxproj -> D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\Debug\cmTryCompileExec2404336267.exe
+FinalizeBuildStatus:
+  Deleting file "cmTryCompileExec2404336267.dir\Debug\cmTryCompileExec2404336267.unsuccessfulbuild".
+  Touching "cmTryCompileExec2404336267.dir\Debug\cmTryCompileExec2404336267.lastbuildstate".
+Done Building Project "D:\dspws\AdvFxsDSP\SystemVueSim\advfxsws\build-win32-vs2012\CMakeFiles\CMakeTmp\cmTryCompileExec2404336267.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.87
+
+
