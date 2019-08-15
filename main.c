@@ -15,6 +15,11 @@
 #include "audio.h"
 #include "firc.h"
 
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <ccblkfn.h>
+#include <time.h>
 int flag = 0;
 
 // left input data from AD1871
@@ -45,6 +50,8 @@ EX_INTERRUPT_HANDLER(Timer0_ISR)
 	//flag = 1;
 }
 
+
+
 EX_INTERRUPT_HANDLER(Sport0_RX_ISR)
 {
 	// confirm interrupt handling
@@ -63,6 +70,40 @@ EX_INTERRUPT_HANDLER(Sport0_RX_ISR)
 
 }
 
+
+void start_real_time_clock(void);
+unsigned int get_real_time_clock_in_seconds(void);
+
+/* Helper function to enable the real-time clock and reset it to time "zero" */
+#define WAIT_FOR_RTC_WRITE_COMPLETE()  { 	while ( *pRTC_ISTAT & 0x8000 ); }
+
+void start_real_time_clock ()
+{
+	if ( !*pRTC_PREN )
+	{
+		*pRTC_PREN = 1;
+		WAIT_FOR_RTC_WRITE_COMPLETE();
+	}
+	
+	*pRTC_STAT = 0;
+	WAIT_FOR_RTC_WRITE_COMPLETE();
+}
+
+
+/* Help function to get the number of seconds since "zero" time.
+ * Only works up to one hour of time. */
+unsigned int get_real_time_clock_in_seconds ()
+{
+	unsigned int clock = *pRTC_STAT;
+	
+	/* second */
+	unsigned int seconds = ( clock & 0x3f );
+	
+	/* minutes */
+	seconds += 60 * ( clock & 0xfc0 ) >> 6;
+	
+	return seconds;
+}
 void
 main_RunFunction(void **inPtr)
 {
@@ -101,9 +142,44 @@ main_RunFunction(void **inPtr)
 	Init_DMA();
 	Init_Interrupts();
 	Enable_DMA_Sport0();
+	
+	clock_t cycles_begin, cycles_end;
+	unsigned long seconds_begin, seconds_end;
+	unsigned long display_cycles_end;
+	volatile unsigned int time_end;
+	
+	int y, p;
+	float l = 0;
+	int kk[43];
 
-    while (1)
-    {
+	for(y=0;y<43;y++)
+	{
+	    kk[y] = y;
+	}
+	
+		
+start_real_time_clock ();
+	
+	cycles_begin = clock ();
+	
+	
+	for (p=0; p<10; p++)
+   {
+      l = l + kk[p]*firc[p];
+   }
+	
+   
+   cycles_end = clock () - cycles_begin;
+	display_cycles_end = ( unsigned long ) ( cycles_end );
+	
+	//time_end = get_real_time_clock_in_seconds ();
+	
+	printf ( "Completed in approx. %u cycles. %f\n",
+			display_cycles_end, l );
+   
+
+    //while (1)
+    //{
         
         volatile int i = *pPORTFIO_DIR;
         volatile int j = *pPORTF_FER;
@@ -118,7 +194,7 @@ main_RunFunction(void **inPtr)
         /* Put the thread's "main" body HERE */
 
         /* Use a "break" instruction to exit the "while (1)" loop */
-    }
+    //}
 
     /* Put the thread's exit from "main" HERE */
     /* A thread is automatically Destroyed when it exits its run function */
