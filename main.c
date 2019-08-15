@@ -22,6 +22,10 @@
 #include <time.h>
 int flag = 0;
 
+// VCO = 250mhz
+// CCLK = 250mhz
+// SCLK = 50mhz
+
 // left input data from AD1871
 int iChannel0LeftIn, iChannel1LeftIn;
 // right input data from AD1871
@@ -183,6 +187,9 @@ start_real_time_clock ();
         
         volatile int i = *pPORTFIO_DIR;
         volatile int j = *pPORTF_FER;
+        volatile int h = *pPLL_DIV;
+        volatile int g = *pPLL_CTL;
+        
         
         i = j;
         /*if (flag)
