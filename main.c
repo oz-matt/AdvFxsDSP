@@ -14,6 +14,8 @@
 #include <sys\exception.h>
 #include "audio.h"
 #include "firc.h"
+#include "lib\rtc.h"
+
 
 
 #include <stdlib.h>
@@ -54,7 +56,9 @@ EX_INTERRUPT_HANDLER(Timer0_ISR)
 	//flag = 1;
 }
 
-
+int v = 0;
+clock_t clkstart, clkend;
+;
 
 EX_INTERRUPT_HANDLER(Sport0_RX_ISR)
 {
@@ -71,46 +75,28 @@ EX_INTERRUPT_HANDLER(Sport0_RX_ISR)
 	// copy processed data from variables into dma output buffer
 	iTxBuffer1[INTERNAL_DAC_L0] = iChannel0LeftOut;
 	iTxBuffer1[INTERNAL_DAC_R0] = iChannel0RightOut;
-
-}
-
-
-void start_real_time_clock(void);
-unsigned int get_real_time_clock_in_seconds(void);
-
-/* Helper function to enable the real-time clock and reset it to time "zero" */
-#define WAIT_FOR_RTC_WRITE_COMPLETE()  { 	while ( *pRTC_ISTAT & 0x8000 ); }
-
-void start_real_time_clock ()
-{
-	if ( !*pRTC_PREN )
+	
+	if (!v)
 	{
-		*pRTC_PREN = 1;
-		WAIT_FOR_RTC_WRITE_COMPLETE();
+	    clkstart = clock ();
+	    v++;
 	}
-	
-	*pRTC_STAT = 0;
-	WAIT_FOR_RTC_WRITE_COMPLETE();
+	else
+	{
+	    clkend = clock () - clkstart;
+	    volatile unsigned long nc = ( unsigned long ) ( clkend );
+	    clkstart = clock ();
+	}
+
 }
 
 
-/* Help function to get the number of seconds since "zero" time.
- * Only works up to one hour of time. */
-unsigned int get_real_time_clock_in_seconds ()
-{
-	unsigned int clock = *pRTC_STAT;
-	
-	/* second */
-	unsigned int seconds = ( clock & 0x3f );
-	
-	/* minutes */
-	seconds += 60 * ( clock & 0xfc0 ) >> 6;
-	
-	return seconds;
-}
 void
 main_RunFunction(void **inPtr)
 {
+    
+    *pPLL_DIV= 0x0001;
+    
     /* Put the thread's "main" Initialization HERE */
 	*pPORTF_FER 		= 0x0003;  // Enable peripheral functions for PF2 and 3
 	*pPORTFIO_DIR		= 0x0041;  // Set Port F Pin 6 (LED1) and Pin 3 (UART0TX) as an output
@@ -139,7 +125,7 @@ main_RunFunction(void **inPtr)
 
 	// enable Timer0 interrupt
 	*pSIC_IMASK = 0x00080000;
-	
+	start_real_time_clock ();
 	Init_Flags();
 	Audio_Reset();
 	Init_Sport0();
@@ -162,9 +148,9 @@ main_RunFunction(void **inPtr)
 	}
 	
 		
-start_real_time_clock ();
+
 	
-	cycles_begin = clock ();
+	//cycles_begin = clock ();
 	
 	
 	for (p=0; p<10; p++)
@@ -173,13 +159,13 @@ start_real_time_clock ();
    }
 	
    
-   cycles_end = clock () - cycles_begin;
-	display_cycles_end = ( unsigned long ) ( cycles_end );
+   //cycles_end = clock () - cycles_begin;
+	//display_cycles_end = ( unsigned long ) ( cycles_end );
 	
 	//time_end = get_real_time_clock_in_seconds ();
 	
-	printf ( "Completed in approx. %u cycles. %f\n",
-			display_cycles_end, l );
+	//printf ( "Completed in approx. %u cycles. %f\n",
+	//		display_cycles_end, l );
    
 
     //while (1)
