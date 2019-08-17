@@ -15,14 +15,16 @@
 #include "audio.h"
 #include "firc.h"
 #include "lib\rtc.h"
+#include <fract.h>
 
 
+extern float firc[43];
 
 #include <stdlib.h>
 #include <stdio.h>
 #include <ccblkfn.h>
 #include <time.h>
-int flag = 0;
+extern fract32 frc[43];
 
 // VCO = 250mhz
 // CCLK = 250mhz
@@ -41,7 +43,6 @@ int iTxBuffer1[2];
 // SPORT0 DMA receive buffer
 int iRxBuffer1[15];
 
-INIT_FIR_FILTER_COEFFICIENTS;
 
 
 EX_INTERRUPT_HANDLER(Timer0_ISR)
@@ -148,16 +149,25 @@ main_RunFunction(void **inPtr)
 	}
 	
 		
-
+init_firc();
 	
 	//cycles_begin = clock ();
 	
 	
-	for (p=0; p<10; p++)
-   {
-      l = l + kk[p]*firc[p];
-   }
+	//for (p=0; p<10; p++)
+   //{
+   //   l = l + kk[p]*firc[p];
+   //}
+   
+   volatile float fl[4] = {-0.34438434, -0.34743434, -0.34436434, -0.3494343};
 	
+   
+   volatile fract32 f32[4] = {float_to_fr32(fl[0]), float_to_fr32(fl[1]), float_to_fr32(fl[2]), float_to_fr32(fl[3])};
+   //fract32 ff32 = float_to_fr32(0.44444);
+   
+   //fract32 res = mult_fr1x32x32(f32, ff32);
+   
+   volatile float fres = fr32_to_float(frc[0]);
    
    //cycles_end = clock () - cycles_begin;
 	//display_cycles_end = ( unsigned long ) ( cycles_end );

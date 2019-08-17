@@ -51,5 +51,7 @@ float firc[43] = { \
 	-0.0027219663815143 \
 }
 
+void init_firc(void);
+
 #endif
 
