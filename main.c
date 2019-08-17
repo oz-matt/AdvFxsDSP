@@ -140,7 +140,7 @@ main_RunFunction(void **inPtr)
 	volatile unsigned int time_end;
 	
 	int y, p;
-	float l = 0;
+	fract32 l = 0;
 	int kk[43];
 
 	for(y=0;y<43;y++)
@@ -151,31 +151,27 @@ main_RunFunction(void **inPtr)
 		
 init_firc();
 	
-	//cycles_begin = clock ();
+	cycles_begin = clock ();
 	
 	
-	//for (p=0; p<10; p++)
-   //{
-   //   l = l + kk[p]*firc[p];
-   //}
+	for (p=0; p<43; p++)
+   {
+      l = add_fr1x32(l, mult_fr1x32x32(frc[p], frc[p]));
+   }
    
-   volatile float fl[4] = {-0.34438434, -0.34743434, -0.34436434, -0.3494343};
-	
-   
-   volatile fract32 f32[4] = {float_to_fr32(fl[0]), float_to_fr32(fl[1]), float_to_fr32(fl[2]), float_to_fr32(fl[3])};
    //fract32 ff32 = float_to_fr32(0.44444);
    
    //fract32 res = mult_fr1x32x32(f32, ff32);
    
-   volatile float fres = fr32_to_float(frc[0]);
+   //volatile float fres = fr32_to_float(frc[0]);
    
-   //cycles_end = clock () - cycles_begin;
+   cycles_end = clock () - cycles_begin;
 	//display_cycles_end = ( unsigned long ) ( cycles_end );
-	
+	volatile unsigned long nc = ( unsigned long ) ( cycles_end );
 	//time_end = get_real_time_clock_in_seconds ();
 	
-	//printf ( "Completed in approx. %u cycles. %f\n",
-	//		display_cycles_end, l );
+	printf ( "Completed in approx. %u cycles. %f\n",
+			nc, fr32_to_float(l) );
    
 
     //while (1)
