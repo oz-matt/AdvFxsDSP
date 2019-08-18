@@ -17,11 +17,11 @@
 <PageNo ><T>Int</T><D>0</D></PageNo></Item>
 <Item XName="PartList" Type="TabInfo" >
 <PageNo ><T>Int</T><D>0</D></PageNo></Item></Item>
-<PVPort ><T>Array_Dbl64</T><D>1;4;;;hxQPMGa6034;T8VCdR7jm24</D></PVPort>
-<DVport ><T>Array_Dbl64</T><D>1;4;;;4924;w14</D></DVport>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;bqJIF9zCr24;2XUPFxIhZ24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;W024;ek14</D></DVport>
 <CurTab >Schematic</CurTab>
-<Window ><T>Array_I64</T><D>1;4;;;d8;J4</D></Window>
-<ShowCmd ><T>Int</T><D>3</D></ShowCmd>
+<Window ><T>Array_I64</T><D>1;4;;;a8;W4</D></Window>
+<ShowCmd ><T>Int</T><D>1</D></ShowCmd>
 <Show ><T>Bool</T><D>1</D></Show>
 <ZOrder ><T>Int</T><D>0</D></ZOrder></Item>
 <Item XName="Display1" Type="DesignDisp" >
@@ -702,7 +702,8 @@
 <Item XName="ModelSet_3" Type="ModelListEntry" >
 <ModelName >FIR@advfxsws Models</ModelName>
 <Indentifier >Cpp1</Indentifier></Item></Item>
-<ModelID /></Item></Item>
+<ModelID />
+<OverrideSubnet /></Item></Item>
 <Item XName="Schematic" Type="CSchematic" >
 <Item XName="SnapGrid" Type="Param" >
 <Data ><T>Double</T><D>125</D></Data>
@@ -724,8 +725,8 @@
 <Italic ><T>Int</T><D>0</D></Italic>
 <Angle ><T>Int</T><D>0</D></Angle></Item>
 <Item XName="Display0" Type="SchematicDisp" >
-<PVPort ><T>Array_Dbl64</T><D>1;4;Cz14;oYPwnJxpY24;rnZ6BPg6234;MXQUYJXtv24</D></PVPort>
-<DVport ><T>Array_Dbl64</T><D>1;4;;;I824;Gt14</D></DVport>
+<PVPort ><T>Array_Dbl64</T><D>1;4;Cz14;oYPwnJxpY24;rnZ6BPg6234;pTBUjNK9t24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;R}14;8f14</D></DVport>
 <Show ><T>Bool</T><D>0</D></Show></Item>
 <Item XName="Display1" Type="SchematicDisp" >
 <PVPort ><T>Array_Dbl64</T><D>1;4;QcPcPcvBH2C;qCpCpCp}82C;pCpCpCNe734;hkh05wvxk24</D></PVPort>
@@ -1025,13 +1026,13 @@
 <Item XName="TabInfo" Type="SerItem" >
 <Item XName="Schematic" Type="TabInfo" >
 <PageNo ><T>Int</T><D>0</D></PageNo></Item></Item>
-<PVPort ><T>Array_Dbl64</T><D>1;4;;;ysjStkzxu24;COmW136Jf24</D></PVPort>
-<DVport ><T>Array_Dbl64</T><D>1;4;;;Q324;ip14</D></DVport>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;C1j4qIGqu24;ETwqfJdlg24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;K324;qq14</D></DVport>
 <CurTab >Schematic</CurTab>
-<Window ><T>Array_I64</T><D>1;4;P2;n2;QC;N8</D></Window>
+<Window ><T>Array_I64</T><D>1;4;O2;v2;MC;n8</D></Window>
 <ShowCmd ><T>Int</T><D>1</D></ShowCmd>
-<Show ><T>Bool</T><D>1</D></Show>
-<ZOrder ><T>Int</T><D>4</D></ZOrder></Item></Item>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>1</D></ZOrder></Item></Item>
 <Item XName="PartList" Type="PartList" >
 <Item XName="F1" Type="Part" >
 <Item XName="ParamSet" Type="ParamSet" >
@@ -2096,8 +2097,9 @@
 <Item XName="Font" Type="Font" >
 <Size ><T>Double</T><D>90.909090909090907</D></Size></Item>
 <Item XName="Display0" Type="SchematicDisp" >
-<PVPort ><T>Array_Dbl64</T><D>1;4;6VgiKoeCO24;4JEANoIlh24;EOrqAq5Eu24;AEbIrUS8s24</D></PVPort>
-<DVport ><T>Array_Dbl64</T><D>1;4;;;e224;ym14</D></DVport></Item>
+<PVPort ><T>Array_Dbl64</T><D>1;4;6VgiKoeCO24;4JEANoIlh24;EOrqAq5Eu24;h7zS1uPks24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;Y224;4o14</D></DVport>
+<Show ><T>Bool</T><D>0</D></Show></Item>
 <Item XName="Part0" Type="SchPart" >
 <Designator >F1</Designator>
 <PosX ><T>Double</T><D>2999</D></PosX>
@@ -2306,13 +2308,13 @@
 <Item XName="TabInfo" Type="SerItem" >
 <Item XName="Schematic" Type="TabInfo" >
 <PageNo ><T>Int</T><D>0</D></PageNo></Item></Item>
-<PVPort ><T>Array_Dbl64</T><D>1;4;;;hikowAh3v24;f{dwVg}5e24</D></PVPort>
-<DVport ><T>Array_Dbl64</T><D>1;4;;;W324;mo14</D></DVport>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;ysjStkzxu24;Cr6gmzNTf24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;Q324;qp14</D></DVport>
 <CurTab >Schematic</CurTab>
-<Window ><T>Array_I64</T><D>1;4;O;R;RA;p5</D></Window>
+<Window ><T>Array_I64</T><D>1;4;N;T;OA;56</D></Window>
 <ShowCmd ><T>Int</T><D>1</D></ShowCmd>
-<Show ><T>Bool</T><D>1</D></Show>
-<ZOrder ><T>Int</T><D>1</D></ZOrder></Item></Item>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>5</D></ZOrder></Item></Item>
 <Item XName="PartList" Type="PartList" >
 <Item XName="F1" Type="Part" >
 <Item XName="ParamSet" Type="ParamSet" >
@@ -3516,8 +3518,9 @@
 <Item XName="Font" Type="Font" >
 <Size ><T>Double</T><D>90.909090909090907</D></Size></Item>
 <Item XName="Display0" Type="SchematicDisp" >
-<PVPort ><T>Array_Dbl64</T><D>1;4;6VgiKoeCO24;4JEAN8jHi24;EOrqAq5Eu24;yxjbINtvr24</D></PVPort>
-<DVport ><T>Array_Dbl64</T><D>1;4;;;k224;m14</D></DVport></Item>
+<PVPort ><T>Array_Dbl64</T><D>1;4;6VgiKoeCO24;4JEAN8jHi24;EOrqAq5Eu24;dFFQIQYTs24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;e224;4n14</D></DVport>
+<Show ><T>Bool</T><D>0</D></Show></Item>
 <Item XName="Part0" Type="SchPart" >
 <Designator >F1</Designator>
 <PosX ><T>Double</T><D>2998.9999999999991</D></PosX>
@@ -3525,7 +3528,7 @@
 <Symbol >SYM_FIR</Symbol>
 <CenterX ><T>Double</T><D>0</D></CenterX>
 <CenterY ><T>Double</T><D>0</D></CenterY>
-<Selected ><T>Bool</T><D>1</D></Selected>
+<Selected ><T>Bool</T><D>0</D></Selected>
 <Description >Fixed Point Finite Impulse Response Filter</Description>
 <Item XName="DrawParams" Type="DrawGroup" >
 <ZOrder ><T>Int</T><D>1</D></ZOrder>
@@ -3743,29 +3746,26 @@
 <ClassNames ><T>Array_BString</T><D>1;1;FIR</D></ClassNames>
 <Item XName="DesignName" Type="Param" >
 <TextParam ><T>Bool</T><D>1</D></TextParam>
-<Data >Design1</Data>
 <DataEntry >Design1</DataEntry></Item>
 <Item XName="ConfigurationName" Type="Param" >
-<DataEntry />
-<Data /></Item>
+<DataEntry /></Item>
 <Item XName="OutputDir" Type="Param" >
 <DataEntry >C:\Users\klutc_000\Documents\My Workspaces\advfxsws</DataEntry>
-<TextParam ><T>Bool</T><D>1</D></TextParam>
-<Data >C:\Users\klutc_000\Documents\My Workspaces\advfxsws</Data></Item>
+<TextParam ><T>Bool</T><D>1</D></TextParam></Item>
 <Item XName="ExportXML" Type="Param" >
 <Data ><T>Bool</T><D>1</D></Data></Item>
 <AMIModel />
 <CompilationLog >output of Impulse &apos;Design1.I1&apos;: Sample Rate of this signal defaulting to the System Sample Rate ( 9.6e+001 KHz ).&#x000D;&#x000A;-- CMake started&#x000D;&#x000A;-- Forcing /MD.&#x000D;&#x000A;&#x000D;&#x000A;-- Forcing /MD.&#x000D;&#x000A;&#x000D;&#x000A;-- Forcing /MD.&#x000D;&#x000A;&#x000D;&#x000A;-- Configuring done&#x000D;&#x000A;&#x000D;&#x000A;-- Build files have been written to: D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win32-vs2012&#x000D;&#x000A;&#x000D;&#x000A;CMake Error at D:/Keysight/SystemVue2015.01/ModelBuilder/CMake/CodeGeneration.cmake:151 (add_library):&#x000D;&#x000A;  Cannot find source file:&#x000D;&#x000A;&#x000D;&#x000A;    FIR.h;FIR.cpp;FIR.xml;@SVU_GENERATED_FILES@&#x000D;&#x000A;&#x000D;&#x000A;  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp&#x000D;&#x000A;  .hxx .in .txx&#x000D;&#x000A;Call Stack (most recent call first):&#x000D;&#x000A;  StandaloneLib/CMakeLists.txt:32 (SVU_ADD_CG_STANDALONE_LIBRARY)&#x000D;&#x000A;&#x000D;&#x000A;&#x000D;&#x000A;&#x000D;&#x000A;-- CMake exited abnormally.&#x000D;&#x000A;-- CMake started&#x000D;&#x000A;-- Forcing /MD.&#x000D;&#x000A;&#x000D;&#x000A;-- Forcing /MD.&#x000D;&#x000A;&#x000D;&#x000A;-- Forcing /MD.&#x000D;&#x000A;-- Configuring done&#x000D;&#x000A;&#x000D;&#x000A;CMake Error at D:/Keysight/SystemVue2015.01/ModelBuilder/CMake/CodeGeneration.cmake:151 (add_library):&#x000D;&#x000A;  Cannot find source file:&#x000D;&#x000A;&#x000D;&#x000A;    FIR.h;FIR.cpp;FIR.xml;@SVU_GENERATED_FILES@&#x000D;&#x000A;&#x000D;&#x000A;  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp&#x000D;&#x000A;  .hxx .in .txx&#x000D;&#x000A;Call Stack (most recent call first):&#x000D;&#x000A;  StandaloneLib/CMakeLists.txt:32 (SVU_ADD_CG_STANDALONE_LIBRARY)&#x000D;&#x000A;&#x000D;&#x000A;&#x000D;&#x000A;&#x000D;&#x000A;-- Build files have been written to: D:/dspws/AdvFxsDSP/SystemVueSim/advfxsws/build-win64-vs2012&#x000D;&#x000A;&#x000D;&#x000A;-- CMake exited abnormally.&#x000D;&#x000A;&#x000D;&#x000A;</CompilationLog></Item></Item>
-<Time >2019:225:12:44</Time>
+<Time >2019:230:02:01</Time>
 <Item XName="TuneList" Type="TuneList" />
-<ClientWnd ><T>Array_I64</T><D>1;4;;;cC;a6</D></ClientWnd>
+<ClientWnd ><T>Array_I64</T><D>1;4;;;YC;W6</D></ClientWnd>
 <Ver ><T>Double</T><D>2012.06</D></Ver>
 <Item XName="Note" UserName="Note" Type="Notes" >
 <Item XName="Page" Type="PageMgr" >
 <Item XName="Display0" Type="NotesDisp" >
 <PVPort ><T>Array_Dbl64</T><D>1;4;;;6tORZnDxr24;skTxsjSpV24</D></PVPort>
 <DVport ><T>Array_Dbl64</T><D>1;4;;;4124;me14</D></DVport>
-<Window ><T>Array_I64</T><D>1;4;d8;;KH;J4</D></Window>
+<Window ><T>Array_I64</T><D>1;4;a8;;EH;W4</D></Window>
 <ShowCmd ><T>Int</T><D>1</D></ShowCmd>
 <Show ><T>Bool</T><D>0</D></Show>
 <ZOrder ><T>Int</T><D>1</D></ZOrder></Item></Item>
@@ -3862,7 +3862,7 @@
 <Zoom ><T>Double</T><D>1</D></Zoom>
 <PVPort ><T>Array_Dbl64</T><D>1;4;;;aR4zM7iq}24;}}}}}}}Fl24</D></PVPort>
 <DVport ><T>Array_Dbl64</T><D>1;4;;;u024;uf14</D></DVport>
-<Window ><T>Array_I64</T><D>1;4;;J4;d8;m8</D></Window>
+<Window ><T>Array_I64</T><D>1;4;;W4;a8;C9</D></Window>
 <ShowCmd ><T>Int</T><D>1</D></ShowCmd>
 <Show ><T>Bool</T><D>0</D></Show>
 <ZOrder ><T>Int</T><D>2</D></ZOrder></Item>
@@ -4017,7 +4017,7 @@
 <Zoom ><T>Double</T><D>1</D></Zoom>
 <PVPort ><T>Array_Dbl64</T><D>1;4;;;1DyFhDg5034;}}}}}}}Fl24</D></PVPort>
 <DVport ><T>Array_Dbl64</T><D>1;4;;;4124;uf14</D></DVport>
-<Window ><T>Array_I64</T><D>1;4;S3;04;BC;U8</D></Window>
+<Window ><T>Array_I64</T><D>1;4;P3;C4;7C;v8</D></Window>
 <ShowCmd ><T>Int</T><D>1</D></ShowCmd>
 <Show ><T>Bool</T><D>0</D></Show>
 <ZOrder ><T>Int</T><D>1</D></ZOrder></Item>
@@ -4204,12 +4204,12 @@
 <SelVar >S3</SelVar>
 <Split ><T>Double</T><D>0.2</D></Split>
 <SubSplit ><T>Double</T><D>0.2</D></SubSplit>
-<PVPort ><T>Array_Dbl64</T><D>1;4;;;HMUkEFGry24;icS5P0FOf24</D></PVPort>
-<DVport ><T>Array_Dbl64</T><D>1;4;;;R624;mp14</D></DVport>
-<Window ><T>Array_I64</T><D>1;4;B1;O1;jC;}6</D></Window>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;Hv7bVK{gy24;lhbP1Hmqg24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;K624;uq14</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;A1;R1;eC;L7</D></Window>
 <ShowCmd ><T>Int</T><D>1</D></ShowCmd>
-<Show ><T>Bool</T><D>1</D></Show>
-<ZOrder ><T>Int</T><D>5</D></ZOrder></Item></Item>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>2</D></ZOrder></Item></Item>
 <FullPath >Analyses\DF1_Design1_Data</FullPath></Item>
 <Item XName="DF1_Design1_S3" UserName="DF1_Design1_S3" Type="Rectangular Graph" >
 <Item XName="Page" Type="PageMgr" >
@@ -4313,11 +4313,11 @@
 <PanX ><T>Double</T><D>0</D></PanX>
 <PanY ><T>Double</T><D>0</D></PanY>
 <Zoom ><T>Double</T><D>1</D></Zoom>
-<PVPort ><T>Array_Dbl64</T><D>1;4;;;3CV5Ihzyy24;s8kuDuCGm24</D></PVPort>
-<DVport ><T>Array_Dbl64</T><D>1;4;;;Y624;mp14</D></DVport>
-<Window ><T>Array_I64</T><D>1;4;n;w;MC;X6</D></Window>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;HMUkEFGry24;M9lwH0TBn24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;R624;uq14</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;m;y;IC;r6</D></Window>
 <ShowCmd ><T>Int</T><D>1</D></ShowCmd>
-<Show ><T>Bool</T><D>1</D></Show>
+<Show ><T>Bool</T><D>0</D></Show>
 <ZOrder ><T>Int</T><D>3</D></ZOrder></Item>
 <Item XName="Legend" Type="Legend" >
 <Color ><T>Int</T><D>1073741824</D></Color>
@@ -4326,8 +4326,8 @@
 <Name >Arial</Name>
 <Size ><T>Double</T><D>8</D></Size></Item>
 <PosX ><T>Double</T><D>0</D></PosX>
-<PosY ><T>Double</T><D>4004.3899709512971</D></PosY>
-<Width ><T>Double</T><D>7411.8547681539812</D></Width>
+<PosY ><T>Double</T><D>4241.3978449670449</D></PosY>
+<Width ><T>Double</T><D>7381.0148731408563</D></Width>
 <Height ><T>Double</T><D>156.4149284362793</D></Height></Item></Item>
 <ShowPoints ><T>Bool</T><D>0</D></ShowPoints>
 <Item XName="Font" Type="Font" >
@@ -4335,9 +4335,9 @@
 <DefContext >DF1_Design1_S3</DefContext>
 <Title >S3</Title>
 <Item XName="Height" Type="Param" >
-<Data ><T>Double</T><D>0.10568444444444444</D></Data></Item>
+<Data ><T>Double</T><D>0.11170444444444444</D></Data></Item>
 <Item XName="Width" Type="Param" >
-<Data ><T>Double</T><D>0.18826111111111113</D></Data></Item>
+<Data ><T>Double</T><D>0.18747777777777777</D></Data></Item>
 <Selected ><T>Bool</T><D>0</D></Selected></Item>
 <Item XName="Graph1" UserName="Graph1" Type="Rectangular Graph" >
 <Item XName="Page" Type="PageMgr" >
@@ -4448,12 +4448,12 @@
 <PanX ><T>Double</T><D>0</D></PanX>
 <PanY ><T>Double</T><D>0</D></PanY>
 <Zoom ><T>Double</T><D>1</D></Zoom>
-<PVPort ><T>Array_Dbl64</T><D>1;4;;;HMUkEFGry24;s8kuDuCGm24</D></PVPort>
-<DVport ><T>Array_Dbl64</T><D>1;4;;;R624;mp14</D></DVport>
-<Window ><T>Array_I64</T><D>1;4;B1;O1;jC;}6</D></Window>
+<PVPort ><T>Array_Dbl64</T><D>1;4;;;Hv7bVK{gy24;M9lwH0TBn24</D></PVPort>
+<DVport ><T>Array_Dbl64</T><D>1;4;;;K624;uq14</D></DVport>
+<Window ><T>Array_I64</T><D>1;4;A1;R1;eC;L7</D></Window>
 <ShowCmd ><T>Int</T><D>1</D></ShowCmd>
-<Show ><T>Bool</T><D>1</D></Show>
-<ZOrder ><T>Int</T><D>2</D></ZOrder></Item>
+<Show ><T>Bool</T><D>0</D></Show>
+<ZOrder ><T>Int</T><D>4</D></ZOrder></Item>
 <Item XName="Legend" Type="Legend" >
 <Color ><T>Int</T><D>1073741824</D></Color>
 <ZOrder ><T>Int</T><D>8000</D></ZOrder>
@@ -4461,8 +4461,8 @@
 <Name >Arial</Name>
 <Size ><T>Double</T><D>8</D></Size></Item>
 <PosX ><T>Double</T><D>0</D></PosX>
-<PosY ><T>Double</T><D>4004.3899709512971</D></PosY>
-<Width ><T>Double</T><D>7381.0148731408563</D></Width>
+<PosY ><T>Double</T><D>4241.3978449670449</D></PosY>
+<Width ><T>Double</T><D>7339.8950131233587</D></Width>
 <Height ><T>Double</T><D>156.4149284362793</D></Height></Item></Item>
 <ShowPoints ><T>Bool</T><D>0</D></ShowPoints>
 <Item XName="Font" Type="Font" >
@@ -4479,9 +4479,9 @@
 <AllowAA ><T>Bool</T><D>0</D></AllowAA>
 <MarkerLine ><T>Int</T><D>1</D></MarkerLine>
 <Item XName="Height" Type="Param" >
-<Data ><T>Double</T><D>0.10568444444444444</D></Data></Item>
+<Data ><T>Double</T><D>0.11170444444444444</D></Data></Item>
 <Item XName="Width" Type="Param" >
-<Data ><T>Double</T><D>0.18747777777777777</D></Data></Item>
+<Data ><T>Double</T><D>0.18643333333333331</D></Data></Item>
 <Selected ><T>Bool</T><D>0</D></Selected></Item></Item>
 <Item XName="WorkspaceVariables" Attrib="14" Type="Equation" >
 <Item XName="EqnBlock" Type="EqnBlock" >

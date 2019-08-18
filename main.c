@@ -86,6 +86,7 @@ EX_INTERRUPT_HANDLER(Sport0_RX_ISR)
 	{
 	    clkend = clock () - clkstart;
 	    volatile unsigned long nc = ( unsigned long ) ( clkend );
+	    volatile int dsd = iChannel0LeftIn;
 	    clkstart = clock ();
 	}
 
@@ -97,6 +98,7 @@ main_RunFunction(void **inPtr)
 {
     
     *pPLL_DIV= 0x0001;
+    *pPLL_CTL = 0x1400;
     
     /* Put the thread's "main" Initialization HERE */
 	*pPORTF_FER 		= 0x0003;  // Enable peripheral functions for PF2 and 3
